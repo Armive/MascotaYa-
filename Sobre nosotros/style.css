@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap');
+head{
+    display: flex;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hind',sans-serif;
+}
+body{
+    margin: 0;
+    translate:color red;
+}
+h2{
+    font-size: 40px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+/* header */
+header {
+    background-color: #FFA45B ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+header h2{
+    margin: 0;
+    color:  #FFDA77;
+    font-weight: bolder;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;      
+}
+header nav a{
+    color: #FBF6F0;
+    font-weight: bold;
+}
+header nav a:hover{
+    color: #AEE6E6 ;
+}
+
+
+/* main */
+p{
+    text-align: center;
+    padding: 0 15px;
+    font-size: 1.5rem;
+    font-family: inherit;
+    text-align: center;
+}
+main{
+    background-color: #fdeedc;
+    display: flex;
+}
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8d167;
+    padding: 10px;
+}
+footer div  {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 25px;
+    align-items: center;
+    margin: 10px;
+}
+footer div {
+    color: #439A97;
+}
+footer div a{
+    color: whitesmoke;
+}
+footer div a:hover{
+    color: gray;
+}
+footer p{
+    font-style: normal;
+    font-size: 7px;
+    color: #FFA45B;
+}
+/* media queries */
+@media (min-width:640px) {
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-around;
+    }
+    header nav{
+        display: flex;
+        flex-direction: row; 
+        gap:25px;
+    }
+    
+}
+@media (max-width:540px) {
+    .div{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width:340px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:275px) {
+    footer div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        margin: 3px;
+    }
+}
+@media (max-width:700px) {
+   main{
+    display: flex;
+    flex-direction: column-reverse;
+
+   }
+}
+@media (max-width:500px) {
+    img{
+        display: none;
+    }
+    
+}

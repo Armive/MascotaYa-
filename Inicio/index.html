@@ -1,0 +1,88 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- METADATOS -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MascotaYa!</title>
+         <link rel="stylesheet" href="style.css"> 
+    </head>
+      <!-- BODY -->
+    <body>
+        <!-- HEADER -->
+        <header>
+            <a href=""><h2>MascotaYa!</h2></a>
+                <nav>
+                    <a href="C:/Users/dfrey/OneDrive/Documentos/Pequeño Programador.css/gatoTato/Perros/Tienda/index.html">Tienda</a>
+                    <a href="C:/Users/dfrey/OneDrive/Documentos/Pequeño Programador.css/gatoTato/Perros/Sobre nosotros/index.html">Sobre Nosotros</a>
+                </nav>
+            <input type="search" name="buscador" id="buscador" placeholder="Buscar Mascota">
+        </header>
+        <!-- MAIN -->
+        <main>
+            <!-- SECCION BANNER -->
+            <section id="banner">
+                <div class="flexslider" >
+                <ul class="slides" id="slides">
+                         <script src="slides.js"></script>
+                        
+                        
+
+                        <!-- FUNCIONES -->
+                        
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+                        <script src="jquery.flexslider.js"></script>
+                        <script type="text/javascript" charset="utf-8">
+
+                        $(window).load(function() {
+                        $('.flexslider').flexslider({
+                                touch: true,
+                                pauseOnAction:false,
+                                pauseOnHover:false,
+                                slideshowSpeed: 4000, 
+                            });
+                        });
+                        </script>
+                       
+                    </ul>
+                </div>
+            </section>
+            <!-- SECCION MASCOTAS -->
+            <section id="mascotas">
+                <div id="perros">
+                    <h3>Perros</h3>
+                </div>
+                <div id="gatos">
+                    <h3>Gatos</h3>
+                </div>
+                <div id="pajaros">
+                    <h3>Pajaros</h3>
+                </div>
+                <div id="accesorios">
+                    <h3>Accesorios</h3>
+                </div>
+            </section> 
+        </main>
+        <!-- FOOTER -->
+        <footer>
+            <div>
+                <div class="div">
+                <a href="#">Tienda</a>
+                <a href="C:/Users/dfrey/OneDrive/Documentos/Pequeño Programador.css/gatoTato/Perros/Sobre nosotros/index.html">Sobre Nosotros</a>
+                </div>
+                <div class="div">
+                    <a href="">Inicio</a>
+                    <a href="#">Perros</a>
+                </div>
+                <div class="div">
+                    <a href="#">Gatos</a>
+                    <a href="#">Accesorios</a>
+                </div>   
+            </div>
+            <h4>&copy; 2023</h4>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
