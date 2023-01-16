@@ -75,6 +75,7 @@ main{
     gap: 10px;
     justify-items: center;
     min-height: 70vh;
+    align-items: start;
     
 }
 main .producto{
