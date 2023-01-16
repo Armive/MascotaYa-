@@ -1,6 +1,6 @@
 perrosdiv=document.getElementById('perros')
 
-fechaAcual=new Date()  
+fechaActual=new Date()  
 class Perro{
     constructor(nombre,id,precio,foto,descuento=0,href='#'){
         this.nombre=nombre

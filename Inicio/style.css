@@ -75,12 +75,12 @@ header nav a:hover{
 .box input:hover{
     width: 200px;
     background-color: #fff;
-    border-color: #8c10b3;
+    border-color: #eff3;
     box-shadow: 0 0 5px #6dcff680;
 }
 /* main */
 main{
-    background-color: #FDEEDC;
+    background-color: #fdeedc;
      
 }
 /* banner */
