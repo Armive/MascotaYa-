@@ -47,10 +47,24 @@ header nav a:hover{
 }
 
 
-header input{
-    border-radius: 10px;
-    border:0px;
-    padding:5px ;
+.box input{
+    
+    padding: 9px 10px 9px 32px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 25px;
+    color: #444;
+    border: 3px solid #a505;
+    background: #fff url(./Imagenes/search-icon.png) no-repeat 9px center;
+    width: 48px;
+    transition: all .5s;
+    
+}
+.box input:hover{
+    width: 200px;
+    background-color: #fff;
+    border-color: #f8d167;
+    box-shadow: 0 0 5px #6dcff680;
 }
 /* main */
 main{
