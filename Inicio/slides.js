@@ -14,11 +14,6 @@ if((fechaActual.getDate()>=21 && fechaActual.getMonth()==5) || (fechaActual.getM
     slider.innerHTML+=inner
 
 }
-if((fechaActual.getDate()>=20 && fechaActual.getMonth()==2)|| (fechaActual.getMonth()==3||fechaActual.getMonth()==4)||(fechaActual.getDate()<=21 &&fechaActual.getMonth()==5 )){
-    inner=`<li><img src="./Banners/banner10.png" alt="Banner10"></li>`
-    slider.innerHTML+=inner
-
-}
 if((fechaActual.getDate()>=20 && fechaActual.getMonth()==8)|| (fechaActual.getMonth()==9||fechaActual.getMonth()==10)||(fechaActual.getDate()<=21 &&fechaActual.getMonth()==11 )){
     inner=`<li><img src="./Banners/banner10.png" alt="Banner10"></li>`
     slider.innerHTML+=inner
@@ -40,7 +35,7 @@ if (fechaActual.getDate()>=13 && fechaActual.getDate()<=25 && fechaActual.getMon
     inner=`<li><img src="./Banners/banner16.png" alt="Banner16"></li>`
     slider.innerHTML+=inner
 }
-if (fechaActual.getDate()>=1 && fechaActual.getDate()<=10 && fechaActual.getMonth()==4) {
+if (fechaActual.getDate()>=20 && fechaActual.getDate()<=25 && fechaActual.getMonth()==4) {
     inner=`<li><img src="./Banners/banner17.png" alt="Banner17"></li>`
     slider.innerHTML+=inner
 }
