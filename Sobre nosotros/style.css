@@ -49,16 +49,19 @@ header nav a:hover{
 
 
 /* main */
-p{
+main p{
     text-align: center;
     padding: 0 15px;
     font-size: 1.5rem;
     font-family: inherit;
     text-align: center;
+    color:#FFA45B;
 }
 main{
     background-color: #fdeedc;
     display: flex;
+    align-items: center;
+    
 }
 
 /* footer */
