@@ -72,8 +72,8 @@ class Pajaro{
         this.href=href
     }  
 }
-let canario=new Pajaro('Canario','canario',200000,'./mascotas/9.png')
-let loro=new Pajaro('Loro','loro',300000,'./mascotas/10.png')
+let canario=new Pajaro('Canario','canario',200000,'./Mascotas/9.png')
+let loro=new Pajaro('Loro','loro',300000,'./Mascotas/10.png')
 let periquito=new Pajaro('Periquito','periquito',200000,'./Mascotas/11.png')
 let cacatua=new Pajaro('Cacatua','cacatua',400000,'./Mascotas/12.png')
 let arrayPajaros=[canario,loro,periquito,cacatua]
