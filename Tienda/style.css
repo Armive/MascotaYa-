@@ -67,6 +67,30 @@ header nav a:hover{
     box-shadow: 0 0 5px #6dcff680;
 }
 /* main */
+.img {
+    width: 100%;
+    margin: 0 auto;
+    height: 400px;
+    margin-top: 50px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden; 
+    opacity: 95%;
+}
+.img:hover::after{transform: translateY(0%);}
+#img1{background-image:url(./Imagenes/perros.jpg);}
+#img2{background-image:url(./Imagenes/GATOS.jfif);}
+#img3{background-image:url(./Imagenes/aves.jpg);}
+#img4{background-image:url(./Imagenes/accesorios.webp);}
+.img::after{
+    font-size: 2rem; color:#fff;background-color: #16456198;position: absolute;inset: 0; display: grid;place-items: center;transform: translateY(100%);transition:transform .3s;
+}
+#img1::after{content:"Perros"; }
+#img2::after{content:"Gatos";}
+#img3::after{content:"Pajaros";}
+#img4::after{content:"Accesorios";}
+
 main{
     display: grid;
     grid-template-columns: 24% 24% 24% 24%;
