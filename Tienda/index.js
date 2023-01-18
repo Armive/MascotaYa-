@@ -1,3 +1,4 @@
+let categorias=''
 let caninos=0
 let felinos=0
 let aves=0
@@ -66,14 +67,14 @@ function ofertasAves(descuento) {
         if (Element.categoria=='aves') {
             Element.Descuento=descuento
         }
-    });
+    })
 }
 function ofertasAccesorios(descuento) {
     productos.forEach(Element => {
         if (Element.categoria=='accesorios') {
             Element.Descuento=descuento
         }
-    });
+    })
 }
 
 if(fechaActual.getDate()>=5 && fechaActual.getDate()<=15 && fechaActual.getMonth()==0){ 
@@ -129,24 +130,42 @@ if (fechaActual.getDay()==5 && fechaActual.getDate()>=24 && fechaActual.getDate(
     ofertasPerros(20)
     ofertasGatos(20)
 }
-
-
-
+function funcionesPerros() {categorias='caninos';filtro();}
+function funcionesGatos() {categorias='felinos'; filtro()}
+function funcionesPajaros() {categorias='aves'; filtro()}
+function funcionesAccesorios(){categorias='accesorios'; filtro()}
 
 
 productos.forEach((producto)=>{
     if (producto.Descuento===0) {
-        let inner=`<a href=${producto.href} class="producto" id=${producto.Nombre} ><img src=${producto.foto} alt=${producto.Nombre}>${producto.Nombre}<p><h4>$${producto.Precio}</h4></p></a>`
+        let inner=`<a href=${producto.href} class="producto ${producto.categoria}" id=${producto.Nombre} ><img src=${producto.foto} alt=${producto.Nombre}>${producto.Nombre}<p><h4>$${producto.Precio}</h4></p></a>`
         main.innerHTML+=inner
     }else{
         let descuento=(100-producto.Descuento)*producto.Precio/100
-        let inner=`<a href=${producto.href} class="producto" id=${producto.Nombre}><p>${producto.Descuento}% </p><img src=${producto.foto} alt=${producto.Nombre} ><p>${producto.Nombre} </p><p><h5>Precio normal: <span>$${producto.Precio}<span></h5><p><p><h5>Precio ahora: $${descuento} </h5></p></a>`
+        let inner=`<a href=${producto.href} class="producto  ${producto.categoria} "  id=${producto.Nombre}><p>${producto.Descuento}% </p><img src=${producto.foto} alt=${producto.Nombre} ><p>${producto.Nombre} </p><p><h5>Precio normal: <span>$${producto.Precio}<span></h5><p><p><h5>Precio ahora: $${descuento} </h5></p></a>`
         main.innerHTML+=inner
     }
 })
+function filtro() {
+    document.querySelectorAll('.producto').forEach(Element=>{
+        if (Element.classList[1]==categorias) {
+            Element.classList.remove('filtro')
+        } else if(categorias=='') {
+            Element.classList.remove('filtro')
+        }else{
+            Element.classList.add('filtro')
+        }
+    })
+}
 
 document.addEventListener('keyup',e =>{
     if (e.target.matches('#buscador')) {
+        if (categorias!='') {
+            categorias=''
+            filtro()
+        }
+        categorias=''
+        
         if (e.key ==="Escape")e.target.value = ""
 
         document.querySelectorAll(".producto").forEach(Element=>{
