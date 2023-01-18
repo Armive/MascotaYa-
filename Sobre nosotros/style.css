@@ -22,7 +22,7 @@ a{
 }
 /* header */
 header {
-    background-color: #FFA45B ;
+    background-color: #00337C ;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -68,7 +68,7 @@ main{
 footer{
     display: flex;
     justify-content: space-between;
-    background-color: #f8d167;
+    background-color: #00337C;
     padding: 10px;
 }
 footer div  {
