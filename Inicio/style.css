@@ -57,27 +57,6 @@ header nav a:hover{
     color: #AEE6E6 ;
 }
 
-
-
-.box input{
-    
-    padding: 9px 10px 9px 32px;
-    outline: none;
-    font-size: 18px;
-    border-radius: 25px;
-    color: #444;
-    border: 3px solid #a505;
-    background: #fff url(./Mascotas/search-icon.png) no-repeat 9px center;
-    width: 49px;
-    transition: all .5s;
-    
-}
-.box input:hover{
-    width: 200px;
-    background-color: #fff;
-    border-color: #eff3;
-    box-shadow: 0 0 5px #6dcff680;
-}
 /* main */
 main{
     background-color: #fdeedc;
