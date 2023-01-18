@@ -67,6 +67,13 @@ header nav a:hover{
     box-shadow: 0 0 5px #6dcff680;
 }
 /* main */
+main{background-color: #FDEEDC;}
+.container{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    gap: 10px;
+    padding: 10px;
+}
 .img {
     width: 100%;
     margin: 0 auto;
@@ -77,6 +84,7 @@ header nav a:hover{
     position: relative;
     overflow: hidden; 
     opacity: 95%;
+    margin: 0;
 }
 .img:hover::after{transform: translateY(0%);}
 #img1{background-image:url(./Imagenes/perros.jpg);}
@@ -91,18 +99,18 @@ header nav a:hover{
 #img3::after{content:"Pajaros";}
 #img4::after{content:"Accesorios";}
 
-main{
+#venta{
     display: grid;
     grid-template-columns: 24% 24% 24% 24%;
     padding: 10px;
-    background-color: #FDEEDC;
+    
     gap: 10px;
     justify-items: center;
     min-height: 70vh;
     align-items: start;
     
 }
-main .producto{
+#venta .producto{
     border-radius: 12px;
     border: 0;
     max-width: 350px;
@@ -113,35 +121,35 @@ main .producto{
     color: #FFA45B;
     background-color: white;
 }
-main .producto img{
+#venta .producto img{
     width: 70%;
 }
-main .producto:hover{
+#venta .producto:hover{
     color: #f8d167;
 }
-main .producto span{
+#venta .producto span{
     text-decoration: line-through;
 }
-main .producto span:hover{
+#venta .producto span:hover{
     text-decoration: underline;
 }
-main .producto h4{
+#venta .producto h4{
     font-size: 1.5rem;
     font-weight: 100;
     color: black;
 }
-main .producto:hover h4,main .producto:hover h5{
+#venta.producto:hover h4,#venta.producto:hover h5{
     color: gray;
 }
-main .producto h5{
+#venta .producto h5{
     font-size: 1rem;
     font-weight:300;
     color: black;
 }
-main .producto>p{
+#venta .producto>p{
     font-size: 1.2rem;
 }
-main .filtro{
+#venta .filtro{
     display: none;
 }
 /* footer */
@@ -168,6 +176,14 @@ footer div a:hover{
     color: gray;
 }
 /* MEDIA queries */
+@media (max-width:670px) {
+    .container{
+        display: grid;
+        grid-template-columns: 49% 49%;
+        grid-template-rows: 49% 49%;
+    }
+    .img{height:180px;}
+}
 @media (min-width:640px) {
     header{
         display: flex;
@@ -224,12 +240,12 @@ footer div a:hover{
     }
 }
 @media (max-width:900px) {
-    main{
+    #venta{
         grid-template-columns: 49% 49%;
     }
 }
 @media (max-width:550px) {
-    main{
+    #venta{
         display: flex;
         flex-direction: column;
         align-items: center;
