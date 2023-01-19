@@ -21,7 +21,7 @@ class Productos{
 let bergamasco=new Productos('Pastor bergamasco','pastor-bergamasco',2000000,"./Mascotas/1.png")
 let chihuahua=new Productos('Chihuahua','chihuahua',1500000,'./Mascotas/2.png')
 let boxer=new Productos('Boxer','boxer',2000000,'./Mascotas/3.png')
-let beagle=new Productos('Beagle','beagle',1700000,'./Mascotas/4.png',20)
+let beagle=new Productos('Beagle','beagle',1700000,'./Mascotas/4.png')
 let arrayPerros=[bergamasco,chihuahua,boxer,beagle]
 // gatos
 let abisinio=new Productos('Abisinio','abisinio',1300000,'./Mascotas/5.png')
@@ -131,7 +131,7 @@ arrayPerros.forEach((ahora) => {
     }
     
 })
- perrosdiv.innerHTML+=`<a class="mas" href="#">Ver mas</a>`
+ perrosdiv.innerHTML+=`<a class="mas" href="../Tienda/index.html">Ver mas</a>`
 //gato
 
 
@@ -145,7 +145,7 @@ arrayGatos.forEach((ahora)=>{
         gatosdiv.innerHTML+=gatoAhora
     }
 })
-gatosdiv.innerHTML+=`<a class="mas" href="#">Ver mas</a>`
+gatosdiv.innerHTML+=`<a class="mas" href="../Tienda/index.html">Ver mas</a>`
 
 
 
@@ -160,7 +160,7 @@ arrayPajaros.forEach((ahora)=>{
         pajarosdiv.innerHTML+=pajaroAhora
     }
 })
-pajarosdiv.innerHTML+=`<a class="mas" href="#">Ver mas</a>`
+pajarosdiv.innerHTML+=`<a class="mas" href="../Tienda/index.html">Ver mas</a>`
 
 
 
@@ -175,4 +175,4 @@ arrayAccesorios.forEach((ahora)=>{
         accesoriosdiv.innerHTML+=accesorioAhora
     }
 })
-accesoriosdiv.innerHTML+=`<a class="mas" href="#">Ver mas</a>`
+accesoriosdiv.innerHTML+=`<a class="mas" href="../Tienda/index.html">Ver mas</a>`
