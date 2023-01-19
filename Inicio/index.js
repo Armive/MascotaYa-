@@ -7,7 +7,7 @@ const accesoriosdiv=document.getElementById('accesorios')
 
 //  objetos
 // perros
-class Perro{
+class Productos{
     constructor(nombre,id,precio,foto,descuento=0,href='#'){
         this.nombre=nombre
         this.id=id
@@ -18,59 +18,29 @@ class Perro{
     }
 }
 
-let bergamasco=new Perro('Pastor bergamasco','pastor-bergamasco',2000000,"./Mascotas/1.png")
-let chihuahua=new Perro('Chihuahua','chihuahua',1500000,'./Mascotas/2.png')
-let boxer=new Perro('Boxer','boxer',2000000,'./Mascotas/3.png')
-let beagle=new Perro('Beagle','beagle',1700000,'./Mascotas/4.png',20)
+let bergamasco=new Productos('Pastor bergamasco','pastor-bergamasco',2000000,"./Mascotas/1.png")
+let chihuahua=new Productos('Chihuahua','chihuahua',1500000,'./Mascotas/2.png')
+let boxer=new Productos('Boxer','boxer',2000000,'./Mascotas/3.png')
+let beagle=new Productos('Beagle','beagle',1700000,'./Mascotas/4.png',20)
 let arrayPerros=[bergamasco,chihuahua,boxer,beagle]
 // gatos
-class Gato{
-    constructor(nombre,id,precio,foto,descuento=0,href='#'){
-        this.nombre=nombre
-        this.id=id
-        this.precio=precio
-        this.foto=foto
-        this.descuento=descuento
-        this.href=href
-    }
-}
-let abisinio=new Gato('Abisinio','abisinio',1300000,'./Mascotas/5.png')
-let bengali=new Gato('Bengali','bengali',1499000,'./Mascotas/6.png')
-let burmes=new Gato('Búrmes','burmes',1400000,'./Mascotas/7.png')
-let balines= new Gato('Balines','balines',1700000,'./Mascotas/8.png') 
+let abisinio=new Productos('Abisinio','abisinio',1300000,'./Mascotas/5.png')
+let bengali=new Productos('Bengali','bengali',1499000,'./Mascotas/6.png')
+let burmes=new Productos('Búrmes','burmes',1400000,'./Mascotas/7.png')
+let balines= new Productos('Balines','balines',1700000,'./Mascotas/8.png') 
 let arrayGatos=[abisinio,bengali,burmes,balines]
 // aves
-class Pajaro{
-    constructor(nombre,id,precio,foto,descuento=0,href='#'){
-        this.nombre=nombre 
-        this.id=id
-        this.precio=precio
-        this.foto=foto
-        this.descuento=descuento
-        this.href=href
-    }  
-}
-let canario=new Pajaro('Canario','canario',200000,'./Mascotas/9.png')
-let loro=new Pajaro('Loro','loro',300000,'./Mascotas/10.png')
-let periquito=new Pajaro('Periquito','periquito',200000,'./Mascotas/11.png')
-let cacatua=new Pajaro('Cacatua','cacatua',400000,'./Mascotas/12.png')
+let canario=new Productos('Canario','canario',200000,'./Mascotas/9.png')
+let loro=new Productos('Loro','loro',300000,'./Mascotas/10.png')
+let periquito=new Productos('Periquito','periquito',200000,'./Mascotas/11.png')
+let cacatua=new Productos('Cacatua','cacatua',400000,'./Mascotas/12.png')
 let arrayPajaros=[canario,loro,periquito,cacatua]
 
 // accesorios
-class Accesorio{
-    constructor(nombre,id,precio,foto,descuento=0,href='#'){
-        this.nombre=nombre
-        this.id=id
-        this.precio=precio
-        this.descuento=descuento
-        this.foto=foto
-        this.href=href
-    }
-}
-let collar=new Accesorio('Collar','collar',13000,'./Mascotas/13.png')
-let gorrito=new Accesorio('Gorrito','gorrito',10900,'./Mascotas/14.png')
-let pelota=new Accesorio('Pelota','pelota',9600,'./Mascotas/15.png')
-let frisby=new Accesorio('Frisby','frisby',12000,'./Mascotas/16.png')
+let collar=new Productos ('Collar','collar',13000,'./Mascotas/13.png')
+let gorrito=new Productos ('Gorrito','gorrito',10900,'./Mascotas/14.png')
+let pelota=new Productos ('Pelota','pelota',9600,'./Mascotas/15.png')
+let frisby=new Productos ('Frisby','frisby',12000,'./Mascotas/16.png')
 let arrayAccesorios=[collar,gorrito,pelota,frisby]
 // algoritmo
 function ofertasPerros(descuento) {
