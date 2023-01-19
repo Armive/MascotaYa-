@@ -130,11 +130,15 @@ if (fechaActual.getDay()==5 && fechaActual.getDate()>=24 && fechaActual.getDate(
     ofertasPerros(20)
     ofertasGatos(20)
 }
-function funcionesPerros() {categorias='caninos';filtro();}
-function funcionesGatos() {categorias='felinos'; filtro()}
-function funcionesPajaros() {categorias='aves'; filtro()}
-function funcionesAccesorios(){categorias='accesorios'; filtro()}
-
+function funcionesPerros() {categorias='caninos';valorInicialesCategorias()}
+function funcionesGatos() {categorias='felinos'; valorInicialesCategorias()}
+function funcionesPajaros() {categorias='aves'; valorInicialesCategorias()}
+function funcionesAccesorios(){categorias='accesorios';valorInicialesCategorias()}
+function valorInicialesCategorias() {
+    document.getElementById('buscador').value=''
+    document.getElementById('buscador').classList.remove('escrito')
+    filtro()
+}
 
 productos.forEach((producto)=>{
     if (producto.Descuento===0) {
@@ -147,7 +151,7 @@ productos.forEach((producto)=>{
     }
 })
 function filtro() {
-    document.getElementById('buscador').value=''
+    
     document.querySelectorAll('.producto').forEach(Element=>{
         if (Element.classList[1]==categorias) {
             Element.classList.remove('filtro')
