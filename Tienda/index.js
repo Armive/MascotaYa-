@@ -159,20 +159,28 @@ function filtro() {
 }
 
 document.addEventListener('keyup',e =>{
-    if (e.target.matches('#buscador')) {
-        if (categorias!='') {
+        if (e.target.matches('#buscador')) {
+            if (categorias!='') {
+                categorias=''
+                filtro()
+            }
             categorias=''
-            filtro()
-        }
-        categorias=''
-        
-        if (e.key ==="Escape")e.target.value = ""
-
-        document.querySelectorAll(".producto").forEach(Element=>{
             
-            Element.id.toLowerCase().includes(e.target.value.toLowerCase())
-                ? Element.classList.remove('filtro')
-                :Element.classList.add('filtro')
-        })
-    }
+            if (e.key ==="Escape")e.target.value = ""
+
+            document.querySelectorAll(".producto").forEach(Element=>{
+                
+                Element.id.toLowerCase().includes(e.target.value.toLowerCase())
+                    ? Element.classList.remove('filtro')
+                    :Element.classList.add('filtro')
+            })
+        }
+        if (document.getElementById('buscador').value=='') {
+            demora = setTimeout(quitar, 2000);
+        } else {
+            document.getElementById('buscador').classList.add('escrito') 
+        }
 })
+function quitar() {
+    document.getElementById('buscador').classList.remove('escrito')
+}

@@ -60,7 +60,7 @@ header nav a:hover{
     transition: all .5s;
     
 }
-.box input:hover{
+.box input:hover,body header .box .escrito{
     width: 200px;
     background-color: #FBF6F0;
     border-color: darkturquoise;
