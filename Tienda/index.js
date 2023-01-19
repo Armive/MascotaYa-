@@ -147,6 +147,7 @@ productos.forEach((producto)=>{
     }
 })
 function filtro() {
+    document.getElementById('buscador').value=''
     document.querySelectorAll('.producto').forEach(Element=>{
         if (Element.classList[1]==categorias) {
             Element.classList.remove('filtro')
