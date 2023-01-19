@@ -55,12 +55,13 @@ main p{
     font-size: 1.5rem;
     font-family: inherit;
     text-align: center;
-    color:#FFA45B;
+    color: #0b0a30;
 }
 main{
     background-color: #fdeedc;
     display: flex;
     align-items: center;
+    min-height: 74vh;
     
 }
 
