@@ -237,7 +237,7 @@ span:hover{
 
 
 .mas{
-    background-color: #439A97;
+    background-color: #00337C;
     border-radius: 10px;
     border: 1px gray solid;
     font-weight: bold;
@@ -248,7 +248,7 @@ span:hover{
     color: #E38B29;
 }
 .mas:hover{
-    background-color: #AEE6E6;
+    background-color: rgba(7, 53, 99, 0.381);
 }
 /* footer */
 footer{
