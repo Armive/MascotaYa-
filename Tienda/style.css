@@ -177,6 +177,13 @@ footer div a:hover{
     color: gray;
 }
 /* MEDIA queries */
+@media (max-width:330px) {
+    main .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .img{height:150px;}
+}
 @media (max-width:670px) {
     .container{
         display: grid;
@@ -252,3 +259,4 @@ footer div a:hover{
         align-items: center;
     }
 }
+
