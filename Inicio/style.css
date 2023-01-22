@@ -38,6 +38,9 @@ header {
     flex-direction: column;
     padding: 10px;
     gap: 10px;
+    position: sticky;
+    z-index: 999;
+    top: 0;
 }
 header h2{
     margin: 0;
