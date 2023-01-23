@@ -59,6 +59,9 @@ main p{
     text-align: center;
     color: #0b0a30;
 }
+main   img{
+    width: 50vw;
+}
 main{
     background-color: #fdeedc;
     display: flex;
@@ -138,6 +141,9 @@ footer p{
     display: flex;
     flex-direction: column-reverse;
 
+   }
+   img{
+        width: 100vw;
    }
 }
 @media (max-width:500px) {
