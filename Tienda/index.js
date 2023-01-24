@@ -44,7 +44,12 @@ let bassetHound=new Producto('Basset Hound',12000,'./Imagenes/27.png','caninos')
 let bassetLeonadoDeBretaña=new Producto('Basset Leonado De Bretaña',1400000,'./Imagenes/28.png','caninos')
 let beauceron=new Producto('Beauceron',1600000,'./Imagenes/29.png','caninos')
 let bedlingtonTerrier=new Producto('Bedlington Terrier',1300000,'./Imagenes/30.png','caninos')
-const productos=[bergamasco,chihuahua,boxer,beagle,abisinio,bengali,burmes,balines,canario,loro,periquito,cacatua,collar,gorrito,pelota,frisby,huesito,jaula,ratonsito,huesitoId,affenpinscher,shibaInuJapones,basenji,bassetAzuldeGascuña,bassetGrifonVandeanoGrande,bassetGrifonVandeanoPequeño,bassetHound,bassetLeonadoDeBretaña,beauceron,bedlingtonTerrier]
+let bichonBoloñes=new Producto('Bichón Boloñés',1400000,'./Imagenes/31.png','caninos')
+let bichonFrise=new Producto('Bichón Frisé',1200000,'./Imagenes/32.png','caninos')
+let bobtail=new Producto('Bobtail (antiguo perro pastor inglés)',1900000,'./Imagenes/33.png','caninos')
+let borderCollie=new Producto('Border Collie',2600000,'./Imagenes/34.png')
+let borderTerrier=new Producto('Border Terrier',1800000,'./Imagenes/35.png','caninos')
+const productos=[bergamasco,chihuahua,boxer,beagle,abisinio,bengali,burmes,balines,canario,loro,periquito,cacatua,collar,gorrito,pelota,frisby,huesito,jaula,ratonsito,huesitoId,affenpinscher,shibaInuJapones,basenji,bassetAzuldeGascuña,bassetGrifonVandeanoGrande,bassetGrifonVandeanoPequeño,bassetHound,bassetLeonadoDeBretaña,beauceron,bedlingtonTerrier,bichonBoloñes,bichonFrise,bobtail,borderCollie,borderTerrier]
 const main=document.getElementById('venta')
 
 
@@ -164,27 +169,27 @@ function filtro() {
 }
 
 document.addEventListener('keyup',e =>{
-        if (e.target.matches('#buscador')) {
-            if (categorias!='') {
-                categorias=''
-                filtro()
-            }
+    if (e.target.matches('#buscador')) {
+        if (categorias!='') {
             categorias=''
-            
-            if (e.key ==="Escape")e.target.value = ""
+            filtro()
+        }
+        categorias=''
+        
+        if (e.key ==="Escape")e.target.value = ""
 
-            document.querySelectorAll(".producto").forEach(Element=>{
-                
-                Element.id.toLowerCase().includes(e.target.value.toLowerCase())
-                    ? Element.classList.remove('filtro')
-                    :Element.classList.add('filtro')
-            })
-        }
-        if (document.getElementById('buscador').value=='') {
-            demora = setTimeout(quitar, 2000);
-        } else {
-            document.getElementById('buscador').classList.add('escrito') 
-        }
+        document.querySelectorAll(".producto").forEach(Element=>{
+            
+            Element.id.toLowerCase().includes(e.target.value.toLowerCase())
+                ? Element.classList.remove('filtro')
+                :Element.classList.add('filtro')
+        })
+    }
+    if (document.getElementById('buscador').value=='') {
+        demora = setTimeout(quitar, 2000);
+    } else {
+        document.getElementById('buscador').classList.add('escrito') 
+    }
 })
 function quitar() {
     document.getElementById('buscador').classList.remove('escrito')
