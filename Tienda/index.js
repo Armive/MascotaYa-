@@ -56,7 +56,7 @@ let bostonTerrier=new Producto('Boston Terrier',1700000,'./Imagenes/37.png','can
 let boyerodeBerna=new Producto('Boyero de Berna',2100000,'./Imagenes/38.png','caninos','boyero-de-berna')
 let boyerodeFlandes=new Producto('Boyero de Flandes',2000000,'./Imagenes/39.png','caninos','boyero-de-flandes')
 let braccoItaliano=new Producto('Bracco italiano',1800000,'./Imagenes/40.png','caninos','bracco-italiano')
-const productos=[bergamasco,chihuahua,boxer,beagle,abisinio,bengali,burmes,balines,canario,loro,periquito,cacatua,collar,gorrito,pelota,frisby,huesito,jaula,ratonsito,huesitoId,affenpinscher,shibaInuJapones,basenji,bassetAzuldeGascuña,bassetGrifonVandeanoGrande,bassetGrifonVandeanoPequeño,bassetHound,bassetLeonardoDeBretaña,beauceron,bedlingtonTerrier,bichonBoloñes,bichonFrise,bobtail,borderCollie,borderTerrier,borzoi,bostonTerrier,boyerodeBerna,boyerodeFlandes]
+const productos=[bergamasco,chihuahua,boxer,beagle,abisinio,bengali,burmes,balines,canario,loro,periquito,cacatua,collar,gorrito,pelota,frisby,huesito,jaula,ratonsito,huesitoId,affenpinscher,shibaInuJapones,basenji,bassetAzuldeGascuña,bassetGrifonVandeanoGrande,bassetGrifonVandeanoPequeño,bassetHound,bassetLeonardoDeBretaña,beauceron,bedlingtonTerrier,bichonBoloñes,bichonFrise,bobtail,borderCollie,borderTerrier,borzoi,bostonTerrier,boyerodeBerna,boyerodeFlandes,braccoItaliano]
 const main=document.getElementById('venta')
 
 
