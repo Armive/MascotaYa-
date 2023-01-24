@@ -1,5 +1,5 @@
 var slider=document.getElementById("slides")
-let fechaActual=new Date()
+let fechaActual=new Date(2022 , 0 , 24)
 if((fechaActual.getDate()>=21 && fechaActual.getMonth()==11)|| (fechaActual.getMonth()==0||fechaActual.getMonth()==1)||(fechaActual.getDate()<=20 &&fechaActual.getMonth()==2 )){
     inner=`<li><img src="./Banners/banner11.png" alt="Banner11"></li>`
     slider.innerHTML+=inner
@@ -69,5 +69,12 @@ if (fechaActual.getDate()>=15 && fechaActual.getDate()<=25 && fechaActual.getMon
 }
 if (fechaActual.getDay()==5 && fechaActual.getDate()>=24 && fechaActual.getDate()<=30 && fechaActual.getMonth()==10) {
     inner=`<li><img src="./Banners/banner7.png" alt="Banner7"></li>`
+    slider.innerHTML+=inner
+}
+if (fechaActual.getDate()%2===0){
+    inner=`<li><img src="./Banners/banner18.png" alt="Banner7"></li>`
+    slider.innerHTML+=inner
+}else if(fechaActual.getDate()%2===1){
+    inner=`<li><img src="./Banners/banner19.png" alt="Banner7"></li>`
     slider.innerHTML+=inner
 }
