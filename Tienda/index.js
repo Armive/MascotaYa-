@@ -37,18 +37,18 @@ let jaula=new Producto('Jaula',15000,'./Imagenes/18.png','accesorios','jaula')
 let ratonsito=new Producto('Ratonsito',5000,'./Imagenes/19.png','accesorios','ratonsito')
 let huesitoId=new Producto('Hueso de ID',7000,'./Imagenes/20.png','accesorios','hueso-de-id')
 let affenpinscher=new Producto('Affenpinscher',1200000,'./Imagenes/21.png','caninos','affenpinscher')
-let shibaInuJapones=new Producto("Shiba Inu Japonés",1700000,'./Imagenes/22.png','caninos','Shiba-Inu-Japones')
+let shibaInuJapones=new Producto("Shiba Inu Japonés",1700000,'./Imagenes/22.png','caninos','shiba-Inu-Japones')
 let basenji=new Producto('Basenji',1500000,'./Imagenes/23.png','caninos','basenji')
 let bassetAzuldeGascuña=new Producto('Basset Azul de Gascuña',1800000,'./Imagenes/24.png','caninos','basset-azul-de-gascuña')
-let bassetGrifonVandeanoGrande=new Producto('Basset Grifón vandeano (grande)',1300000,'./Imagenes/25.png','caninos','basset-grifon-vandeano-grande')
-let bassetGrifonVandeanoPequeño=new Producto('Basset Grifón vandeano (pequeño)',1350000,'./Imagenes/26.png','caninos','basset-grifon-vandeano-pequeño')
+let bassetGrifonVandeanoGrande=new Producto('Basset Grifón vandeano (grande)',1300000,'./Imagenes/25.png','caninos','basset-grifon-vandeano-(grande)')
+let bassetGrifonVandeanoPequeño=new Producto('Basset Grifón vandeano (pequeño)',1350000,'./Imagenes/26.png','caninos','basset-grifon-vandeano-(pequeño)')
 let bassetHound=new Producto('Basset Hound',12000,'./Imagenes/27.png','caninos','basser-hound')
-let bassetLeonardoDeBretaña=new Producto('Basset Leonardo De Bretaña',1400000,'./Imagenes/28.png','caninos','basset leonardo-de-bretaña')
+let bassetLeonardoDeBretaña=new Producto('Basset Leonardo De Bretaña',1400000,'./Imagenes/28.png','caninos','basset-leonardo-de-bretaña')
 let beauceron=new Producto('Beauceron',1600000,'./Imagenes/29.png','caninos','beauceron')
 let bedlingtonTerrier=new Producto('Bedlington Terrier',1300000,'./Imagenes/30.png','caninos','bedlington-terrier')
 let bichonBoloñes=new Producto('Bichón Boloñés',1400000,'./Imagenes/31.png','caninos','bichon-boloñes')
 let bichonFrise=new Producto('Bichón Frisé',1200000,'./Imagenes/32.png','caninos','bichon-frise')
-let bobtail=new Producto('Bobtail (antiguo perro pastor inglés)',1900000,'./Imagenes/33.png','caninos','bobtail')
+let bobtail=new Producto('Bobtail (antiguo perro pastor inglés)',1900000,'./Imagenes/33.png','caninos','bobtail-(antiguo-perro-pastor-inglés)')
 let borderCollie=new Producto('Border Collie',2600000,'./Imagenes/34.png','caninos','border-collie')
 let borderTerrier=new Producto('Border Terrier',1800000,'./Imagenes/35.png','caninos','border-terrier')
 let borzoi=new Producto('Borzoi',1950000,'./Imagenes/36.png','caninos','borzoi')
@@ -56,7 +56,20 @@ let bostonTerrier=new Producto('Boston Terrier',1700000,'./Imagenes/37.png','can
 let boyerodeBerna=new Producto('Boyero de Berna',2100000,'./Imagenes/38.png','caninos','boyero-de-berna')
 let boyerodeFlandes=new Producto('Boyero de Flandes',2000000,'./Imagenes/39.png','caninos','boyero-de-flandes')
 let braccoItaliano=new Producto('Bracco italiano',1800000,'./Imagenes/40.png','caninos','bracco-italiano')
-const productos=[bergamasco,chihuahua,boxer,beagle,abisinio,bengali,burmes,balines,canario,loro,periquito,cacatua,collar,gorrito,pelota,frisby,huesito,jaula,ratonsito,huesitoId,affenpinscher,shibaInuJapones,basenji,bassetAzuldeGascuña,bassetGrifonVandeanoGrande,bassetGrifonVandeanoPequeño,bassetHound,bassetLeonardoDeBretaña,beauceron,bedlingtonTerrier,bichonBoloñes,bichonFrise,bobtail,borderCollie,borderTerrier,borzoi,bostonTerrier,boyerodeBerna,boyerodeFlandes,braccoItaliano]
+let bracoAlemanDePeloCorto=new Producto('Braco alemán de pelo corto',1900000,'./Imagenes/41.png','caninos','braco-aleman-de-pelo-corto')
+let bracoAlemanDePeloDuro=new Producto('Braco alemán de pelo duro',2100000,'./Imagenes/42.png','caninos','braco-aleman-de-pelo-duro')
+let bracoDeWeimar=new Producto('Braco de Weimar (de pelo corto y suave)',1800000,'./Imagenes/43.png','caninos','braco-de-weimar-(de-pelo-corto-y-suave)')
+let bracoHungaro=new Producto('Braco hungaro',1600000,'./Imagenes/44.png','caninos','braco-hungaro')
+let bracoHungaroDePeloDuro=new Producto('Braco húngaro de pelo duro',1700000,'./Imagenes/45.png','caninos','braco-hungaro-de-pelo-duro')
+let breton=new Producto('Bretón',1200000,'./Imagenes/46.png','caninos','breton')
+let buhundNoruego=new Producto('Buhund noruego',1700000,'./Imagenes/47.png','caninos','buhund-noruego')
+let bullTerrier=new Producto('Bull Terrier',1200000,'./Imagenes/48.png','caninos','bull-terrier')
+let bullTerrierMiniatura=new Producto('Bull Terrier miniatura',1000000,'./Imagenes/49.png','caninos','bull-terrier-miniatura')
+let bulldog=new Producto('Bulldog',1300000,'./Imagenes/50.png','caninos','bulldog')
+let bulldogFrances=new Producto('Bulldog francés',1200000,'./Imagenes/51.png','caninos','bulldog-frances')
+let pastorBelgaMalinois=new Producto('Pastor belga malinois',2100000,'./Imagenes/52.png','caninos','pastor-belga-malinois')
+let pastorAleman=new Producto('Pastor aleman',2300000,'./Imagenes/53.png','caninos','pastor-aleman')
+const productos=[bergamasco,chihuahua,boxer,beagle,abisinio,bengali,burmes,balines,canario,loro,periquito,cacatua,collar,gorrito,pelota,frisby,huesito,jaula,ratonsito,huesitoId,affenpinscher,shibaInuJapones,basenji,bassetAzuldeGascuña,bassetGrifonVandeanoGrande,bassetGrifonVandeanoPequeño,bassetHound,bassetLeonardoDeBretaña,beauceron,bedlingtonTerrier,bichonBoloñes,bichonFrise,bobtail,borderCollie,borderTerrier,borzoi,bostonTerrier,boyerodeBerna,boyerodeFlandes,braccoItaliano,bracoAlemanDePeloCorto,bracoAlemanDePeloDuro,bracoDeWeimar,bracoHungaro,bracoHungaroDePeloDuro,breton,buhundNoruego,bullTerrier,bullTerrierMiniatura,bulldog,bulldogFrances,pastorBelgaMalinois,pastorAleman]
 const main=document.getElementById('venta')
 
 
@@ -201,7 +214,7 @@ document.addEventListener('keyup',e =>{
         })
     }
     if (document.getElementById('buscador').value=='') {
-        demora = setTimeout(quitar, 2000);
+        demora = setTimeout(quitar, 2000)
     } else {
         document.getElementById('buscador').classList.add('escrito') 
     }
