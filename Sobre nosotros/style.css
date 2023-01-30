@@ -101,7 +101,7 @@ footer p{
  /* scrroll bar */
  body::-webkit-scrollbar{
     width: 10px;
-    background: #fdeedc;
+    background: #e6b87f;
     display: flex;
     justify-content: center;
 }
