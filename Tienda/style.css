@@ -73,7 +73,7 @@ header nav a:hover{
     color: deepskyblue;
 }
 /* main */
-main{background-color: #FDEEDC;}
+main{background-color: #fdeeec;}
 .container{
     display: grid;
     grid-template-columns: 24% 24% 24% 24%;
@@ -185,7 +185,7 @@ footer div a:hover{
  /* scrroll bar */
  body::-webkit-scrollbar{
     width: 10px;
-    background: #fdeedc;
+    background: #e6b87f;
     display: flex;
     justify-content: center;
 }
@@ -264,8 +264,8 @@ body::-webkit-scrollbar-thumb{
         margin: 3px;
     }
 }
-@media (max-width:900px) {
-    #venta{
+@media (max-width:800px) {
+    main #venta{
         grid-template-columns: 49% 49%;
     }
 }
@@ -274,6 +274,11 @@ body::-webkit-scrollbar-thumb{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+}
+@media (max-width:1030px) {
+    #venta{
+        grid-template-columns: 32% 32% 32%;
     }
 }
 
