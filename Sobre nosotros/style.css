@@ -98,6 +98,17 @@ footer p{
     font-size: 7px;
     color: #FFA45B;
 }
+ /* scrroll bar */
+ body::-webkit-scrollbar{
+    width: 10px;
+    background: #fdeedc;
+    display: flex;
+    justify-content: center;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #ff9d00;
+    border-radius: 10px; 
+}
 /* media queries */
 @media (min-width:640px) {
     header{
