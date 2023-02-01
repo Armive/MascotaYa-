@@ -18,6 +18,7 @@ class Producto{
 }
 let bergamasco=new Producto('Pastor bergamasco',2000000,'./Imagenes/1.png','caninos','pastor-bergamasco')
 let chihuahua=new Producto('Chihuahua',1500000,'./Imagenes/2.png','caninos','chihuahua')
+let basenji=new Producto('Basenji',1500000,'./Imagenes/23.png','caninos','basenji')
 let boxer= new Producto('Boxer',2000000,'./Imagenes/3.png','caninos','boxer')
 let beagle =new Producto('Beagle',1700000,'./Imagenes/4.png','caninos','beagle')
 let abisinio=new Producto('Abisinio',1300000,'./Imagenes/5.png','felinos','abinisio')
@@ -38,7 +39,6 @@ let ratonsito=new Producto('Ratonsito',5000,'./Imagenes/19.png','accesorios','ra
 let huesitoId=new Producto('Hueso de ID',7000,'./Imagenes/20.png','accesorios','hueso-de-id')
 let affenpinscher=new Producto('Affenpinscher',1200000,'./Imagenes/21.png','caninos','affenpinscher')
 let shibaInuJapones=new Producto("Shiba Inu Japonés",1700000,'./Imagenes/22.png','caninos','shiba-Inu-Japones')
-let basenji=new Producto('Basenji',1500000,'./Imagenes/23.png','caninos','basenji')
 let bassetAzuldeGascuña=new Producto('Basset Azul de Gascuña',1800000,'./Imagenes/24.png','caninos','basset-azul-de-gascuña')
 let bassetGrifonVandeanoGrande=new Producto('Basset Grifón vandeano (grande)',1300000,'./Imagenes/25.png','caninos','basset-grifon-vandeano-(grande)')
 let bassetGrifonVandeanoPequeño=new Producto('Basset Grifón vandeano (pequeño)',1350000,'./Imagenes/26.png','caninos','basset-grifon-vandeano-(pequeño)')
@@ -80,8 +80,10 @@ let foldEscoces=new Producto('Fold escocés',1223000,'./Imagenes/61.png','felino
 let khaoManee=new Producto('Khao Manee',1230000,'./Imagenes/62.png','felinos','khao-Manee')
 let korat=new Producto('Korat',1220000,'./Imagenes/63.png','felinos','korat')
 let laperm=new Producto('Laperm',1400000,'./Imagenes/64.png','felinos','laperm')
+let guacamaya=new Producto('Guacamaya',450000,'./Imagenes/65.png','aves','guacamaya')
+let cotorra=new Producto('Cotorra',200000,'./Imagenes/66.png','aves','cotorra')
 
-const productos=[bergamasco,chihuahua,boxer,beagle,abisinio,bengali,burmes,balines,canario,loro,periquito,cacatua,collar,gorrito,pelota,frisby,huesito,jaula,ratonsito,huesitoId,affenpinscher,shibaInuJapones,basenji,bassetAzuldeGascuña,bassetGrifonVandeanoGrande,bassetGrifonVandeanoPequeño,bassetHound,bassetLeonardoDeBretaña,beauceron,bedlingtonTerrier,bichonBoloñes,bichonFrise,bobtail,borderCollie,borderTerrier,borzoi,bostonTerrier,boyerodeBerna,boyerodeFlandes,braccoItaliano,bracoAlemanDePeloCorto,bracoAlemanDePeloDuro,bracoDeWeimar,bracoHungaro,bracoHungaroDePeloDuro,breton,buhundNoruego,bullTerrier,bullTerrierMiniatura,bulldog,bulldogFrances,pastorBelgaMalinois,pastorAleman,britanicoDePeloCorto,burmilla,chinchilla,cornishRex,cymric,devonRex,ExoticoDePeloCorto,foldEscoces,khaoManee,korat,laperm]
+const productos=[bergamasco,chihuahua,boxer,beagle,abisinio,bengali,burmes,balines,canario,loro,periquito,cacatua,collar,gorrito,pelota,frisby,huesito,jaula,ratonsito,huesitoId,affenpinscher,shibaInuJapones,basenji,bassetAzuldeGascuña,bassetGrifonVandeanoGrande,bassetGrifonVandeanoPequeño,bassetHound,bassetLeonardoDeBretaña,beauceron,bedlingtonTerrier,bichonBoloñes,bichonFrise,bobtail,borderCollie,borderTerrier,borzoi,bostonTerrier,boyerodeBerna,boyerodeFlandes,braccoItaliano,bracoAlemanDePeloCorto,bracoAlemanDePeloDuro,bracoDeWeimar,,bracoHungaro,bracoHungaroDePeloDuro,breton,buhundNoruego,bullTerrier,bullTerrierMiniatura,bulldog,bulldogFrances,pastorBelgaMalinois,pastorAleman,britanicoDePeloCorto,burmilla,chinchilla,cornishRex,cymric,devonRex,ExoticoDePeloCorto,foldEscoces,khaoManee,korat,laperm,guacamaya,cotorra]
 const main=document.getElementById('venta')
 
 
