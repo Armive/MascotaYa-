@@ -69,7 +69,19 @@ let bulldog=new Producto('Bulldog',1300000,'./Imagenes/50.png','caninos','bulldo
 let bulldogFrances=new Producto('Bulldog francés',1200000,'./Imagenes/51.png','caninos','bulldog-frances')
 let pastorBelgaMalinois=new Producto('Pastor belga malinois',2100000,'./Imagenes/52.png','caninos','pastor-belga-malinois')
 let pastorAleman=new Producto('Pastor aleman',2300000,'./Imagenes/53.png','caninos','pastor-aleman')
-const productos=[bergamasco,chihuahua,boxer,beagle,abisinio,bengali,burmes,balines,canario,loro,periquito,cacatua,collar,gorrito,pelota,frisby,huesito,jaula,ratonsito,huesitoId,affenpinscher,shibaInuJapones,basenji,bassetAzuldeGascuña,bassetGrifonVandeanoGrande,bassetGrifonVandeanoPequeño,bassetHound,bassetLeonardoDeBretaña,beauceron,bedlingtonTerrier,bichonBoloñes,bichonFrise,bobtail,borderCollie,borderTerrier,borzoi,bostonTerrier,boyerodeBerna,boyerodeFlandes,braccoItaliano,bracoAlemanDePeloCorto,bracoAlemanDePeloDuro,bracoDeWeimar,bracoHungaro,bracoHungaroDePeloDuro,breton,buhundNoruego,bullTerrier,bullTerrierMiniatura,bulldog,bulldogFrances,pastorBelgaMalinois,pastorAleman]
+let britanicoDePeloCorto=new Producto('Británico de pelo corto',1450000,'./Imagenes/54.png','felinos','britanico-de-pelo-corto')
+let burmilla=new Producto('Burmilla',1350000,'./Imagenes/55.png','felinos','burmilla')
+let chinchilla=new Producto('Chinchilla',1235000,'./Imagenes/56.png','felinos','chinchilla')
+let cornishRex=new Producto('Cornish rex',1300000,'./Imagenes/57.png','felinos','cornish-rex')
+let cymric=new Producto('Cymric',1980000,'./Imagenes/58.png','felinos','cymric')
+let devonRex=new Producto('Devon Rex',1180000,'./Imagenes/59.png','felinos','devon-rex')
+let ExoticoDePeloCorto=new Producto('Exótico de pelo corto',1680000,'./Imagenes/60.png','felinos','Exotico-de-pelo-corto')
+let foldEscoces=new Producto('Fold escocés',1223000,'./Imagenes/61.png','felinos','fold-escoces')
+let khaoManee=new Producto('Khao Manee',1230000,'./Imagenes/62.png','felinos','khao-Manee')
+let korat=new Producto('Korat',1220000,'./Imagenes/63.png','felinos','korat')
+let laperm=new Producto('Laperm',1400000,'./Imagenes/64.png','felinos','laperm')
+
+const productos=[bergamasco,chihuahua,boxer,beagle,abisinio,bengali,burmes,balines,canario,loro,periquito,cacatua,collar,gorrito,pelota,frisby,huesito,jaula,ratonsito,huesitoId,affenpinscher,shibaInuJapones,basenji,bassetAzuldeGascuña,bassetGrifonVandeanoGrande,bassetGrifonVandeanoPequeño,bassetHound,bassetLeonardoDeBretaña,beauceron,bedlingtonTerrier,bichonBoloñes,bichonFrise,bobtail,borderCollie,borderTerrier,borzoi,bostonTerrier,boyerodeBerna,boyerodeFlandes,braccoItaliano,bracoAlemanDePeloCorto,bracoAlemanDePeloDuro,bracoDeWeimar,bracoHungaro,bracoHungaroDePeloDuro,breton,buhundNoruego,bullTerrier,bullTerrierMiniatura,bulldog,bulldogFrances,pastorBelgaMalinois,pastorAleman,britanicoDePeloCorto,burmilla,chinchilla,cornishRex,cymric,devonRex,ExoticoDePeloCorto,foldEscoces,khaoManee,korat,laperm]
 const main=document.getElementById('venta')
 
 
