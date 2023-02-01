@@ -10,7 +10,6 @@ head{
 }
 body{
     margin: 0;
-    translate:color red;
 }
 h2{
     font-size: 40px;
@@ -20,6 +19,17 @@ a{
     color: black;
     font-size: 15px;
 }
+/*loading*/
+.cargando{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #f1f2f3;
+}
+.hidden{
+    overflow: hidden;
+}
+
 /* header */
 header {
     background-color: #00337C ;
