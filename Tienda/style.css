@@ -137,6 +137,8 @@ main{background-color: #fdeeec;}
     align-items: center;
     color: #FFA45B;
     background-color: white;
+    text-align: center;
+    height: 365px;
 }
 #venta .producto img{
     width: 70%;
