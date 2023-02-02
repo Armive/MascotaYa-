@@ -82,8 +82,14 @@ let korat=new Producto('Korat',1220000,'./Imagenes/63.png','felinos','korat')
 let laperm=new Producto('Laperm',1400000,'./Imagenes/64.png','felinos','laperm')
 let guacamaya=new Producto('Guacamaya',450000,'./Imagenes/65.png','aves','guacamaya')
 let cotorra=new Producto('Cotorra',200000,'./Imagenes/66.png','aves','cotorra')
-
-const productos=[bergamasco,chihuahua,boxer,beagle,abisinio,bengali,burmes,balines,canario,loro,periquito,cacatua,collar,gorrito,pelota,frisby,huesito,jaula,ratonsito,huesitoId,affenpinscher,shibaInuJapones,basenji,bassetAzuldeGascuña,bassetGrifonVandeanoGrande,bassetGrifonVandeanoPequeño,bassetHound,bassetLeonardoDeBretaña,beauceron,bedlingtonTerrier,bichonBoloñes,bichonFrise,bobtail,borderCollie,borderTerrier,borzoi,bostonTerrier,boyerodeBerna,boyerodeFlandes,braccoItaliano,bracoAlemanDePeloCorto,bracoAlemanDePeloDuro,bracoDeWeimar,,bracoHungaro,bracoHungaroDePeloDuro,breton,buhundNoruego,bullTerrier,bullTerrierMiniatura,bulldog,bulldogFrances,pastorBelgaMalinois,pastorAleman,britanicoDePeloCorto,burmilla,chinchilla,cornishRex,cymric,devonRex,ExoticoDePeloCorto,foldEscoces,khaoManee,korat,laperm,guacamaya,cotorra]
+let guacal=new  Producto('Guacal',70000,'./Imagenes/67.png','accesorios','guacal')
+let salvavidasParaPerro=new Producto('Salva vidas para perro', 50000, './Imagenes/68.png', 'accesorios','salva-vidas-para-perro')
+let ifetch=new Producto('iFetch',200000,'./Imagenes/69.png','accesorios','ifetch')
+let bebederoAutomaticoParaPerros=new Producto('Bebedero Automatico Para Perros',150000,'./Imagenes/70.png','accesorios','bebedero-automatico-para-perros')
+let colchonetaRefrigeranteParaPerros=new Producto('Colchoneta Refrigerante para perros', 70000,'./Imagenes/71.png','accesorios','colchoneta-refrigerante-para-perros')
+let laserParaGatos=new Producto('Laser Para Gatos',20000,'./Imagenes/72.png','accesorios','laser-para-gatos')
+let ratonConControlRemoto=new Producto('Raton controlado a control remoto',30000,'./Imagenes/73.png','accesorios','raton-controlado-a-control-remoto')
+const productos=[bergamasco,chihuahua,boxer,beagle,abisinio,bengali,burmes,balines,canario,loro,periquito,cacatua,collar,gorrito,pelota,frisby,huesito,jaula,ratonsito,huesitoId,affenpinscher,shibaInuJapones,basenji,bassetAzuldeGascuña,bassetGrifonVandeanoGrande,bassetGrifonVandeanoPequeño,bassetHound,bassetLeonardoDeBretaña,beauceron,bedlingtonTerrier,bichonBoloñes,bichonFrise,bobtail,borderCollie,borderTerrier,borzoi,bostonTerrier,boyerodeBerna,boyerodeFlandes,braccoItaliano,bracoAlemanDePeloCorto,bracoAlemanDePeloDuro,bracoDeWeimar,,bracoHungaro,bracoHungaroDePeloDuro,breton,buhundNoruego,bullTerrier,bullTerrierMiniatura,bulldog,bulldogFrances,pastorBelgaMalinois,pastorAleman,britanicoDePeloCorto,burmilla,chinchilla,cornishRex,cymric,devonRex,ExoticoDePeloCorto,foldEscoces,khaoManee,korat,laperm,guacamaya,cotorra,guacal,ifetch,bebederoAutomaticoParaPerros,colchonetaRefrigeranteParaPerros,laserParaGatos,ratonConControlRemoto]
 const main=document.getElementById('venta')
 
 
