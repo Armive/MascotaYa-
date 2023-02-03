@@ -129,7 +129,8 @@ main{
     font-size: 1.2rem;
     font-weight: 900;
     color: #E4E4E4;
-    margin: 0 auto;
+    margin: 10px auto;
+    margin:10px;
 }
 #relacionados:hover{
     color: blanchedalmond;
