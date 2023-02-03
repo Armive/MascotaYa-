@@ -5,6 +5,8 @@ let aves=0
 let accesorios=0
 let ahoraIdSinGuion=''
 let fechaActual=new Date()
+let resultados=false
+let parrafoResultados=document.getElementById('relacionados')
 class Producto{
     constructor(Nombre,Precio,foto,categoria,id,Descuento=0,href="#"){
         this.Nombre=Nombre
@@ -217,7 +219,7 @@ document.addEventListener('keyup',e =>{
         categorias=''
         
         if (e.key ==="Escape")e.target.value = ""
-
+        resultados=false
         document.querySelectorAll(".producto").forEach(Element=>{   
             ahoraIdSinGuion=''
             for (let i = 0; i < Element.id.length; i++) {
@@ -231,8 +233,14 @@ document.addEventListener('keyup',e =>{
             ahoraIdSinGuion.toLowerCase().includes(e.target.value.toLowerCase())
                 ? Element.classList.remove('filtro')
                 :Element.classList.add('filtro')
+            if(ahoraIdSinGuion.toLowerCase().includes(e.target.value.toLowerCase()))resultados=true
+            
         })
+        resultados
+            ?parrafoResultados.classList.add('filtro')
+            :parrafoResultados.classList.remove('filtro')
     }
+
     if (document.getElementById('buscador').value=='') {
         demora = setTimeout(quitar, 2000)
     } else {
