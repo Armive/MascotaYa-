@@ -83,12 +83,18 @@ header nav a:hover{
     color: deepskyblue;
 }
 /* main */
-main{background-color: #fdeeec;}
+main{
+    background-color: #fdeeec;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+}
 .container{
     display: grid;
     grid-template-columns: 24% 24% 24% 24%;
     gap: 10px;
     padding: 10px;
+    width: 100%;
 }
 .img {
     width: 100%;
@@ -115,7 +121,20 @@ main{background-color: #fdeeec;}
 #img2::after{content:"Gatos";}
 #img3::after{content:"Pajaros";}
 #img4::after{content:"Accesorios";}
-
+#relacionados{
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #439A97;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #E4E4E4;
+    margin: 0 auto;
+}
+#relacionados:hover{
+    color: blanchedalmond;
+    background-color: #4ca6a3;
+}
 #venta{
     display: grid;
     grid-template-columns: 24% 24% 24% 24%;
@@ -139,6 +158,7 @@ main{background-color: #fdeeec;}
     background-color: white;
     text-align: center;
     height: 365px;
+    min-width: 280px;
 }
 #venta .producto img{
     width: 70%;
@@ -168,7 +188,7 @@ main{background-color: #fdeeec;}
 #venta .producto>p{
     font-size: 1.2rem;
 }
-#venta .filtro{
+#venta .filtro,main>.filtro{
     display: none;
 }
 /* footer */
