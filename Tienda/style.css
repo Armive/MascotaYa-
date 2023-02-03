@@ -159,7 +159,6 @@ main{
     background-color: white;
     text-align: center;
     height: 365px;
-    min-width: 280px;
 }
 #venta .producto img{
     width: 70%;
