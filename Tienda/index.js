@@ -183,7 +183,6 @@ function funcionesPajaros() {categorias='aves'; valorInicialesCategorias()}
 function funcionesAccesorios(){categorias='accesorios';valorInicialesCategorias()}
 function valorInicialesCategorias() {
     document.getElementById('buscador').value=''
-    document.getElementById('buscador').classList.remove('escrito')
     filtro()
 }
 
@@ -240,13 +239,4 @@ document.addEventListener('keyup',e =>{
             ?parrafoResultados.classList.add('filtro')
             :parrafoResultados.classList.remove('filtro')
     }
-
-    if (document.getElementById('buscador').value=='') {
-        demora = setTimeout(quitar, 2000)
-    } else {
-        document.getElementById('buscador').classList.add('escrito') 
-    }
 })
-function quitar() {
-    document.getElementById('buscador').classList.remove('escrito')
-}
