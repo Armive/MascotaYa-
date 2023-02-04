@@ -73,7 +73,7 @@ header nav a:hover{
     transition: all .5s;
     
 }
-.box input:hover,body header .box .escrito{
+.box input:hover,input:not(:placeholder-shown){
     width: 200px;
     background-color: #FBF6F0;
     border-color: darkturquoise;
