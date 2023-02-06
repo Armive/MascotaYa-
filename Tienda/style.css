@@ -1,37 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap');
+
 /* inicializando */
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     font-family: 'Hind', sans-serif;
     box-sizing: border-box;
-    
+
 }
-body{
+
+body {
     margin: 0;
-    
+
 }
-h2{
+
+h2 {
     font-size: 40px;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
     font-size: 15px;
 }
+
 /*Loader*/
-.hidden{
+.hidden {
     overflow: hidden;
 }
-.cargando{
+
+.cargando {
     background-color: #f1f2f3;
     height: 100vh;
     display: grid;
     place-items: center;
 }
+
 /* header */
 header {
-    background-color: #00337C ;
+    background-color: #00337C;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -41,27 +48,30 @@ header {
     z-index: 999;
     top: 0;
 }
-header h2{
+
+header h2 {
     margin: 0;
-    color:  #FFDA77;
+    color: #FFDA77;
     font-weight: bolder;
 }
 
-header nav{
+header nav {
     display: flex;
-    flex-direction: column;      
+    flex-direction: column;
 }
-header nav a{
+
+header nav a {
     color: #FBF6F0;
     font-weight: bold;
 }
-header nav a:hover{
-    color: #AEE6E6 ;
+
+header nav a:hover {
+    color: #AEE6E6;
 }
 
 
-.box input{
-    
+.box input {
+
     padding: 9px 10px 9px 32px;
     outline: none;
     font-size: 18px;
@@ -71,31 +81,37 @@ header nav a:hover{
     background: #fff url(./Imagenes/search-icon.png) no-repeat 9px center;
     width: 48px;
     transition: all .5s;
-    
+
 }
-.box input:hover,body header .box .escrito{
+
+.box input:hover,
+body header .box .escrito {
     width: 200px;
     background-color: #FBF6F0;
     border-color: darkturquoise;
     box-shadow: 0 0 5px #6dcff680;
 }
-.box ::placeholder{
+
+.box ::placeholder {
     color: deepskyblue;
 }
+
 /* main */
-main{
+main {
     background-color: #fdeeec;
     display: flex;
     /* align-items: center; */
     flex-direction: column;
 }
-.container{
+
+.container {
     display: grid;
     grid-template-columns: 24% 24% 24% 24%;
     gap: 10px;
     padding: 10px;
     width: 100%;
 }
+
 .img {
     width: 100%;
     margin: 0 auto;
@@ -104,24 +120,61 @@ main{
     background-size: cover;
     background-position: center;
     position: relative;
-    overflow: hidden; 
+    overflow: hidden;
     opacity: 95%;
     margin: 0;
     border-radius: 15px;
 }
-.img:hover::after{transform: translateY(0%);}
-#img1{background-image:url(./Imagenes/perros.jpg);}
-#img2{background-image:url(./Imagenes/GATOS.jfif);}
-#img3{background-image:url(./Imagenes/aves.jpg);}
-#img4{background-image:url(./Imagenes/Revista_610337f232922_29072021.jpg);}
-.img::after{
-    font-size: 2rem; color:#fff;background-color: #16456198;position: absolute;inset: 0; display: grid;place-items: center;transform: translateY(100%);transition:transform .3s;
+
+.img:hover::after {
+    transform: translateY(0%);
 }
-#img1::after{content:"Perros"; }
-#img2::after{content:"Gatos";}
-#img3::after{content:"Pajaros";}
-#img4::after{content:"Accesorios";}
-#relacionados{
+
+#img1 {
+    background-image: url(./Imagenes/perros.jpg);
+}
+
+#img2 {
+    background-image: url(./Imagenes/GATOS.jfif);
+}
+
+#img3 {
+    background-image: url(./Imagenes/aves.jpg);
+}
+
+#img4 {
+    background-image: url(./Imagenes/Revista_610337f232922_29072021.jpg);
+}
+
+.img::after {
+    font-size: 2rem;
+    color: #fff;
+    background-color: #16456198;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform .3s;
+}
+
+#img1::after {
+    content: "Perros";
+}
+
+#img2::after {
+    content: "Gatos";
+}
+
+#img3::after {
+    content: "Pajaros";
+}
+
+#img4::after {
+    content: "Accesorios";
+}
+
+#relacionados {
     text-align: center;
     padding: 10px;
     border-radius: 10px;
@@ -130,24 +183,27 @@ main{
     font-weight: 900;
     color: #E4E4E4;
     margin: 10px auto;
-    margin:10px;
+    margin: 10px;
 }
-#relacionados:hover{
+
+#relacionados:hover {
     color: blanchedalmond;
     background-color: #4ca6a3;
 }
-#venta{
+
+#venta {
     display: grid;
     grid-template-columns: 24% 24% 24% 24%;
     padding: 10px;
-    
+
     gap: 10px;
     justify-items: center;
     min-height: 70vh;
     align-items: start;
-    
+
 }
-#venta .producto{
+
+#venta .producto {
     border-radius: 12px;
     border: 0;
     max-width: 350px;
@@ -160,127 +216,159 @@ main{
     text-align: center;
     height: 365px;
 }
-#venta .producto img{
+
+#venta .producto img {
     width: 70%;
 }
-#venta .producto:hover{
+
+#venta .producto:hover {
     color: #f8d167;
 }
-#venta .producto span{
+
+#venta .producto span {
     text-decoration: line-through;
 }
-#venta .producto span:hover{
+
+#venta .producto span:hover {
     text-decoration: underline;
 }
-#venta .producto h4{
+
+#venta .producto h4 {
     font-size: 1.5rem;
     font-weight: 100;
     color: black;
 }
-#venta.producto:hover h4,#venta.producto:hover h5{
+
+#venta.producto:hover h4,
+#venta.producto:hover h5 {
     color: gray;
 }
-#venta .producto h5{
+
+#venta .producto h5 {
     font-size: 1rem;
-    font-weight:300;
+    font-weight: 300;
     color: black;
 }
-#venta .producto>p{
+
+#venta .producto>p {
     font-size: 1.2rem;
 }
-#venta .filtro,main>.filtro{
+
+#venta .filtro,
+main>.filtro {
     display: none;
 }
+
 /* footer */
-footer{
+footer {
     display: flex;
     justify-content: space-between;
     background-color: #00337C;
     padding: 10px;
 }
-footer div  {
+
+footer div {
     display: flex;
     flex-direction: row-reverse;
     gap: 25px;
     align-items: center;
     margin: 10px;
 }
+
 footer div {
     color: #439A97;
 }
-footer div a{
+
+footer div a {
     color: whitesmoke;
 }
-footer div a:hover{
+
+footer div a:hover {
     color: gray;
 }
- /* scrroll bar */
- body::-webkit-scrollbar{
+
+/* scrroll bar */
+body::-webkit-scrollbar {
     width: 10px;
     background: #e6b87f;
     display: flex;
     justify-content: center;
 }
-body::-webkit-scrollbar-thumb{
+
+body::-webkit-scrollbar-thumb {
     background-color: #ff9d00;
-    border-radius: 10px; 
+    border-radius: 10px;
 }
+
 /* MEDIA queries */
 @media (max-width:330px) {
-    main .container{
+    main .container {
         display: flex;
         flex-direction: column;
     }
-    .img{height:150px;}
+
+    .img {
+        height: 150px;
+    }
 }
+
 @media (max-width:670px) {
-    .container{
+    .container {
         display: grid;
         grid-template-columns: 49% 49%;
         grid-template-rows: 49% 49%;
     }
-    .img{height:180px;}
+
+    .img {
+        height: 180px;
+    }
 }
+
 @media (min-width:640px) {
-    header{
+    header {
         display: flex;
         flex-direction: row;
         justify-content: center;
         justify-content: space-around;
     }
-    header nav{
+
+    header nav {
         display: flex;
-        flex-direction: row; 
-        gap:25px;
+        flex-direction: row;
+        gap: 25px;
     }
-    main{
+
+    main {
         min-height: 78vh;
     }
 }
+
 @media (max-width:900px) {
-    #mascotas{
+    #mascotas {
         display: grid;
         grid-template-columns: 49% 49%;
         grid-template-rows: 49% 49%;
         gap: calc(10px);
     }
-    
+
 }
 
 @media (max-width:450px) {
-    #mascotas{
+    #mascotas {
         display: flex;
         flex-direction: column;
     }
 }
+
 @media (max-width:540px) {
-    .div{
+    .div {
         display: flex;
         flex-direction: column;
     }
 }
-@media (max-width:340px){
-    footer{
+
+@media (max-width:340px) {
+    footer {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -288,7 +376,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 @media (max-width:275px) {
-    footer div{
+    footer div {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -296,21 +384,23 @@ body::-webkit-scrollbar-thumb{
         margin: 3px;
     }
 }
+
 @media (max-width:800px) {
-    main #venta{
+    main #venta {
         grid-template-columns: 49% 49%;
     }
 }
+
 @media (max-width:550px) {
-    #venta{
+    #venta {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 }
+
 @media (max-width:1030px) {
-    #venta{
+    #venta {
         grid-template-columns: 32% 32% 32%;
     }
 }
-
