@@ -210,15 +210,20 @@ main{
     max-width: 330px;
     height: 340px;
     padding: 10px;
+    transition: .3s;
+}
+.mascota:hover{
+    transform: scale(1.03);
+    color: #f6ae73;
 }
 .mascota h4{
     color: #2e2e2e;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     font-weight: 100;
 }
 .mascota h5{
     color: #2e2e2e;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 200;
 }
 .mascota:hover h4, .mascota:hover h5{
@@ -231,15 +236,11 @@ main{
 .mascota:hover .p{
     color: khaki;
 
-
 }
 #mascotas div a img{
     width: 70%;
     
-}
-.mascota:hover{
-    color: #f6ae73;
-}
+}    
 span{
     text-decoration: line-through;
     color: #777777;
@@ -259,9 +260,11 @@ span:hover{
     justify-content: center;
     max-width: 330px;
     color: #E38B29;
+    transition: .5s;
 }
 .mas:hover{
     background-color: rgba(7, 53, 99, 0.381);
+    transform: scale(1.03);
 }
 /* footer */
 footer{
