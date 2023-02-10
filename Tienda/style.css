@@ -111,9 +111,9 @@ main{
 }
 .img:hover::after{transform: translateY(0%);}
 #img1{background-image:url(./Imagenes/perros.jpg);}
-#img2{background-image:url(./Imagenes/GATOS.jfif);}
+#img2{background-image:url(./Imagenes/gatos.jfif);}
 #img3{background-image:url(./Imagenes/aves.jpg);}
-#img4{background-image:url(./Imagenes/Revista_610337f232922_29072021.jpg);}
+#img4{background-image:url(./Imagenes/accesorios.jpg);}
 .img::after{
     font-size: 2rem; color:#fff;background-color: #16456198;position: absolute;inset: 0; display: grid;place-items: center;transform: translateY(100%);transition:transform .3s;
 }
