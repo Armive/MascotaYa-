@@ -123,10 +123,10 @@ if (fechaActual.getDay()==5 && fechaActual.getDate()>=24 && fechaActual.getDate(
 arrayPerros.forEach((ahora) => {
     if(ahora.descuento>0){
         ahoraPrecio=(100-ahora.descuento)*ahora.precio/100
-        let perroAhora=`<a class="mascota" href=${ahora.href} >${ahora.descuento}% <img src=${ahora.foto} alt=${ahora.nombre }> <p class="p">${ahora.nombre} </p> <p> <h5>Antes: <span>$${ahora.precio} </span> </h5></p> <p> <h5>Ahora: $${ahoraPrecio}  </h5> </p> </a>`
+        let perroAhora=`<a class="mascota" href=${ahora.href} > <p>${ahora.descuento}%</p> <img src=${ahora.foto} alt=${ahora.nombre }> <p>${ahora.nombre} </p>  <h5>Antes: <span>$${ahora.precio}</span> </h5><h5>Ahora: $${ahoraPrecio}</h5></a>`
         perrosdiv.innerHTML+=perroAhora
     }else{
-        let perroAhora=`<a class="mascota" href=${ahora.href} ><img src=${ahora.foto} alt=${ahora.nombre }> <p class="p">${ahora.nombre}</p> <h4><p>$${ahora.precio}</h4> </p></a>`
+        let perroAhora=`<a class="mascota" href=${ahora.href} ><img src=${ahora.foto} alt=${ahora.nombre }> <p>${ahora.nombre}</p> <h4>$${ahora.precio}</h4></a>`
         perrosdiv.innerHTML+=perroAhora
     }
     
@@ -138,10 +138,10 @@ arrayPerros.forEach((ahora) => {
 arrayGatos.forEach((ahora)=>{
     if(ahora.descuento>0){
         ahoraPrecio=(100-ahora.descuento)*ahora.precio/100
-        let gatoAhora=`<a class="mascota" href=${ahora.href} >${ahora.descuento}% <img src=${ahora.foto} alt=${ahora.nombre }> <p class="p">${ahora.nombre} </p> <p><h5> Antes: <span>$${ahora.precio} </span> </h5></p> <p><h5> Ahora: $${ahoraPrecio}  </h5> </p> </a>`
+        let gatoAhora=`<a class="mascota" href=${ahora.href} ><p>${ahora.descuento}% </p><img src=${ahora.foto} alt=${ahora.nombre }><p>${ahora.nombre}</p><h5>Antes: <span>$${ahora.precio} </span> </h5> <h5> Ahora: $${ahoraPrecio}</h5></a>`
         gatosdiv.innerHTML+=gatoAhora
     }else{
-        let gatoAhora=`<a class="mascota" href=${ahora.href} ><img src=${ahora.foto} alt=${ahora.nombre }> <p class="p">${ahora.nombre}</p> <p><h4> $${ahora.precio} </h4> </p></a>`
+        let gatoAhora=`<a class="mascota" href=${ahora.href} ><img src=${ahora.foto} alt=${ahora.nombre }> <p>${ahora.nombre}</p><h4> $${ahora.precio} </h4></a>`
         gatosdiv.innerHTML+=gatoAhora
     }
 })
@@ -153,10 +153,10 @@ gatosdiv.innerHTML+=`<a class="mas" href="../Tienda/index.html">Ver mas</a>`
 arrayPajaros.forEach((ahora)=>{
     if(ahora.descuento>0){
         ahoraPrecio=(100-ahora.descuento)*ahora.precio/100
-        let pajaroAhora=`<a class="mascota" href=${ahora.href} >${ahora.descuento}% <img src=${ahora.foto} alt=${ahora.nombre }> <p class="p">${ahora.nombre} </p> <p> <h5>Antes: <span>>$${ahora.precio} </span> </h5></p> <p> <h5>Ahora: $${ahoraPrecio} </h5>  </p> </a>`
+        let pajaroAhora=`<a class="mascota" href=${ahora.href} ><p>${ahora.descuento}%</p> <img src=${ahora.foto} alt=${ahora.nombre }><p>${ahora.nombre}</p><h5>Antes: <span>$${ahora.precio} </span></h5><h5>Ahora: $${ahoraPrecio} </h5></a>`
         pajarosdiv.innerHTML+=pajaroAhora
     }else{
-        let pajaroAhora=`<a class="mascota" href=${ahora.href} ><img src=${ahora.foto} alt=${ahora.nombre }> <p class="p">${ahora.nombre}</p> <p><h4>$${ahora.precio} </h4></p></a>`
+        let pajaroAhora=`<a class="mascota" href=${ahora.href} ><img src=${ahora.foto} alt=${ahora.nombre }> <p>${ahora.nombre}</p><h4>$${ahora.precio}</h4></a>`
         pajarosdiv.innerHTML+=pajaroAhora
     }
 })
@@ -168,10 +168,10 @@ pajarosdiv.innerHTML+=`<a class="mas" href="../Tienda/index.html">Ver mas</a>`
 arrayAccesorios.forEach((ahora)=>{
     if(ahora.descuento>0){
         ahoraPrecio=(100-ahora.descuento)*ahora.precio/100
-        let accesorioAhora=`<a class="mascota" href=${ahora.href} >${ahora.descuento}% <img src=${ahora.foto} alt=${ahora.nombre }> <p class="p">${ahora.nombre} </p> <p> <h5> Antes: <span>$${ahora.precio} </span> </h5></p> <p><h5> Ahora: $${ahoraPrecio} </h5>  </p> </a>`
+        let accesorioAhora=`<a class="mascota" href=${ahora.href} ><p>${ahora.descuento}%</p><img src=${ahora.foto} alt=${ahora.nombre }> <p>${ahora.nombre} </p><h5>Antes: <span>$${ahora.precio}</span></h5><h5> Ahora: $${ahoraPrecio} </h5></a>`
         accesoriosdiv.innerHTML+=accesorioAhora
     }else{
-        let accesorioAhora=`<a class="mascota" href=${ahora.href} ><img src=${ahora.foto} alt=${ahora.nombre }> <p class="p">${ahora.nombre}</p> <p><h4>$${ahora.precio} </h4></p></a>`
+        let accesorioAhora=`<a class="mascota" href=${ahora.href} ><img src=${ahora.foto} alt=${ahora.nombre }> <p>${ahora.nombre}</p><h4>$${ahora.precio} </h4></a>`
         accesoriosdiv.innerHTML+=accesorioAhora
     }
 })
