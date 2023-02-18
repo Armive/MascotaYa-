@@ -1,3 +1,24 @@
+//modo oscuro
+const btnSwitch = document.querySelector('#switch')
+
+btnSwitch.addEventListener('click',() =>{
+    document.body.classList.toggle('dark')
+    btnSwitch.classList.toggle('active')
+    if (document.body.classList.contains('dark')) {
+        localStorage.setItem('dark-mode','true')
+    }else{
+        localStorage.setItem('dark-mode','false')
+    }
+})
+
+if(localStorage.getItem('dark-mode')=== 'true'){
+    document.body.classList.add('dark')
+    btnSwitch.classList.add('active') 
+}else{
+    document.body.classList.remove('dark')
+    btnSwitch.classList.remove('active')  
+}
+//productos
 let categorias=''
 let caninos=0
 let felinos=0
@@ -6,7 +27,8 @@ let accesorios=0
 let ahoraIdSinGuion=''
 let fechaActual=new Date()
 let resultados=false
-let parrafoResultados=document.getElementById('relacionados')
+const parrafoResultados=document.getElementById('relacionados')
+const mensajeBusqueda = document.getElementById('busqueda')
 class Producto{
     constructor(Nombre,Precio,foto,categoria,id,Descuento=0,href="#"){
         this.Nombre=Nombre
@@ -188,11 +210,11 @@ function valorInicialesCategorias() {
 
 productos.forEach((producto)=>{
     if (producto.Descuento===0) {
-        let inner=`<a href=${producto.href} class="producto ${producto.categoria}" id=${producto.id} ><img src=${producto.foto} alt=${producto.Nombre}>${producto.Nombre}<p><h4>$${producto.Precio}</h4></p></a>`
+        let inner=`<a href=${producto.href} class="producto ${producto.categoria}" id=${producto.id} ><img src=${producto.foto} alt=${producto.Nombre}><p>${producto.Nombre}</p><h4>$${producto.Precio}</h4></a>`
         main.innerHTML+=inner
     }else{
         let descuento=(100-producto.Descuento)*producto.Precio/100
-        let inner=`<a href=${producto.href} class="producto  ${producto.categoria} "  id=${producto.id} ><p>${producto.Descuento}% </p><img src=${producto.foto} alt=${producto.Nombre} ><p>${producto.Nombre} </p><p><h5>Precio normal: <span>$${producto.Precio}<span></h5><p><p><h5>Precio ahora: $${descuento} </h5></p></a>`
+        let inner=`<a href=${producto.href} class="producto  ${producto.categoria} " id=${producto.id} ><p>${producto.Descuento}%</p><img src=${producto.foto} alt=${producto.Nombre} ><p>${producto.Nombre} </p><h5>Precio normal: <span>$${producto.Precio}<span></h5><h5>Precio ahora: $${descuento} </h5></a>`
         main.innerHTML+=inner
     }
 })
@@ -232,11 +254,16 @@ document.addEventListener('keyup',e =>{
             ahoraIdSinGuion.toLowerCase().includes(e.target.value.toLowerCase())
                 ? Element.classList.remove('filtro')
                 :Element.classList.add('filtro')
-            if(ahoraIdSinGuion.toLowerCase().includes(e.target.value.toLowerCase()))resultados=true
+            if(ahoraIdSinGuion.toLowerCase().includes(e.target.value.toLowerCase())){
+                resultados=true
+            }
             
         })
-        resultados
-            ?parrafoResultados.classList.add('filtro')
-            :parrafoResultados.classList.remove('filtro')
+        if(resultados){
+            parrafoResultados.classList.add('filtro')
+        }else{
+            parrafoResultados.classList.remove('filtro')
+            mensajeBusqueda.innerHTML = e.target.value
+        }
     }
 })
