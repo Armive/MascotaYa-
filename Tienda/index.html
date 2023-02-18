@@ -7,6 +7,7 @@
     <title>Tienda</title>
     <link rel="shortcut icon" href="./Imagenes/MascotaYa!.png">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/e20f92f9a8.js" crossorigin="anonymous"></script>
     <style type="text/css">
         @keyframes ldio-7wzovdi0yup {
             0% { background: #667395 }
@@ -62,6 +63,10 @@
             <nav>
                 <a href="../Inicio/index.html">Inicio</a>
                 <a href="../Sobre nosotros/index.html">Sobre Nosotros</a>
+                <button id="switch">
+                    <span><i class="fa-solid fa-sun"></i></span>
+                    <span><i class="fa-solid fa-moon"></i></span>
+                </button>
             </nav>
             <div class="box">
                 <input type="text" class="buscador" name="buscador" id="buscador" placeholder="Buscar " autocomplete="off" spellcheck="false" maxlength="40"> 
@@ -75,7 +80,7 @@
             <a href="#venta"><div onmouseup="funcionesPajaros()" class="img" id="img3"></div>
             <a href="#venta"><div onmouseup="funcionesAccesorios()" class="img" id="img4"></div></a>
         </div></a>
-        <p id="relacionados" class="filtro">No hay elementos relacionados con  tu busqueda :(</p>
+        <p id="relacionados" class="filtro">No hay productos relacionados con la busqueda "<span id="busqueda"></span>"  :(</p>
         <div id="venta">    
         </div>
     </main>

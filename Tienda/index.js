@@ -1,3 +1,24 @@
+//modo oscuro
+const btnSwitch = document.querySelector('#switch')
+
+btnSwitch.addEventListener('click',() =>{
+    document.body.classList.toggle('dark')
+    btnSwitch.classList.toggle('active')
+    if (document.body.classList.contains('dark')) {
+        localStorage.setItem('dark-mode','true')
+    }else{
+        localStorage.setItem('dark-mode','false')
+    }
+})
+
+if(localStorage.getItem('dark-mode')=== 'true'){
+    document.body.classList.add('dark')
+    btnSwitch.classList.add('active') 
+}else{
+    document.body.classList.remove('dark')
+    btnSwitch.classList.remove('active')  
+}
+//productos
 let categorias=''
 let caninos=0
 let felinos=0
@@ -6,7 +27,8 @@ let accesorios=0
 let ahoraIdSinGuion=''
 let fechaActual=new Date()
 let resultados=false
-let parrafoResultados=document.getElementById('relacionados')
+const parrafoResultados=document.getElementById('relacionados')
+const mensajeBusqueda = document.getElementById('busqueda')
 class Producto{
     constructor(Nombre,Precio,foto,categoria,id,Descuento=0,href="#"){
         this.Nombre=Nombre
@@ -232,11 +254,16 @@ document.addEventListener('keyup',e =>{
             ahoraIdSinGuion.toLowerCase().includes(e.target.value.toLowerCase())
                 ? Element.classList.remove('filtro')
                 :Element.classList.add('filtro')
-            if(ahoraIdSinGuion.toLowerCase().includes(e.target.value.toLowerCase()))resultados=true
+            if(ahoraIdSinGuion.toLowerCase().includes(e.target.value.toLowerCase())){
+                resultados=true
+            }
             
         })
-        resultados
-            ?parrafoResultados.classList.add('filtro')
-            :parrafoResultados.classList.remove('filtro')
+        if(resultados){
+            parrafoResultados.classList.add('filtro')
+        }else{
+            parrafoResultados.classList.remove('filtro')
+            mensajeBusqueda.innerHTML = e.target.value
+        }
     }
 })
