@@ -6,31 +6,33 @@
     font-family: 'Hind', sans-serif;
     box-sizing: border-box;
     
-}
+}  
 :root{
     --color-fondo-loader: #f1f2f3;
-    --color-fondo-header: #00337C;
+    --color-fondo-header:#00204A;
     --color-logo: #FFDA77;
-    --color-anclas-header:#fff;
-    --color-anclas-header-hover:#AEE6E6;
-    --color-fondo-main: #f9f9f9;
-    --color-titulo-producto:#E38B29;
-    --color-precios: #000;
-    --color-scrollbar: #e6b87f;
-    --color-scrollbar-thumb: #ff9d00;
+    --color-anclas-header:#ffe;
+    --color-anclas-header-hover:#121212;
+    --color-fondo-main:#f9f9f9;
+    --color-titulo-producto:#FDB44B;
+    --color-precios: #00204A;
+    --color-scrollbar: #D8D8D8;
+    --color-scrollbar-thumb: #063571;
+    --fondo-producto: #fff;
     --color-textos-buscador: darkturquoise;
     --color-borde-buscador: dodgerblue;
-    --fondo-producto: #fff;
 }
 
 body.dark{
-    --color-fondo-main: rgb(48, 46, 46);
-    --fondo-producto:#2d2b2b;
-    --color-precios: #ffffff;
-    --color-fondo-header: #02142e;
+    --color-fondo-main: #393E46;
+    --fondo-producto:#FFD369;
+    --color-precios: #EEEEEE;
+    --color-fondo-header: #222831;
+    --color-titulo-producto:#393E46;
     --color-textos-buscador: rgb(14, 56, 57);
     --color-borde-buscador: rgb(9, 25, 41);
 }
+
 h2{
     font-size: 2.5rem;
 }
