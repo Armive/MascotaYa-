@@ -27,9 +27,9 @@
 body.dark{
     --color-fondo-main: #393E46;
     --fondo-producto:#FFD369;
-    --color-precios: #EEEEEE;
+    --color-precios: #ffffff;
     --color-fondo-header: #222831;
-    --color-titulo-producto-y-seccion:#393E46;
+    --color-titulo-producto-y-seccion:#ffffff;
 }
 html body .cargando{
     height: 100vh;
@@ -257,7 +257,7 @@ main{
     background-color: var(--fondo-producto);
     flex-direction: column;
     max-width: 330px;
-    height: 340px;
+    height: 360px;
     padding: 10px;
     transition: .3s;
     color: var(--color-precios);
@@ -279,6 +279,7 @@ main{
    font-size: 1.2rem;
    color: var(--color-titulo-producto-y-seccion);
    font-weight: bold;
+   white-space: nowrap;
 }
 #mascotas div a img{
     width: 70%;
@@ -326,14 +327,14 @@ footer div a:hover{
     color: var(--color-anclas-header-hover);
 } 
  /* scrroll bar */
-    body::-webkit-scrollbar{
-        width: 10px;
-        background: var(--color-scrollbar);
-    }
-    body::-webkit-scrollbar-thumb{
-        background-color: var(--color-scrollbar-thumb);
-        border-radius: 10px; 
-    }
+body::-webkit-scrollbar{
+    width: 10px;
+    background: var(--color-scrollbar);
+}
+body::-webkit-scrollbar-thumb{
+    background-color: var(--color-scrollbar-thumb);
+    border-radius: 10px; 
+}
 /* media queries */
 @media (min-width:640px) {
     header{

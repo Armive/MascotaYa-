@@ -19,18 +19,18 @@
     --color-scrollbar: #D8D8D8;
     --color-scrollbar-thumb: #063571;
     --fondo-producto: #fff;
-    --color-textos-buscador: darkturquoise;
-    --color-borde-buscador: dodgerblue;
+    --color-textos-buscador: #00ced1;
+    --color-borde-buscador: #1e90ff;
 }
 
 body.dark{
     --color-fondo-main: #393E46;
     --fondo-producto:#FFD369;
-    --color-precios: #EEEEEE;
+    --color-precios: #ffffff;
     --color-fondo-header: #222831;
-    --color-titulo-producto:#393E46;
-    --color-textos-buscador: rgb(14, 56, 57);
-    --color-borde-buscador: rgb(9, 25, 41);
+    --color-titulo-producto:#ffffff;
+    --color-textos-buscador: #0e3839;
+    --color-borde-buscador: #091929;
 }
 
 h2{
@@ -219,7 +219,7 @@ main{
     align-items: center;
     background-color: var(--fondo-producto);
     text-align: center;
-    height: 365px;
+    height: 370px;
     transition: .2s;
     color: var(--color-precios);
 }
@@ -241,13 +241,14 @@ main{
     font-weight: 100;
 }
 #venta .producto h5{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight:300;    
 }
 #venta .producto p{
     font-size: 1.3rem;
     color: var(--color-titulo-producto);
     font-weight: bolder;
+    white-space: nowrap;
 }
 .filtro{
     display: none !important;
@@ -362,7 +363,7 @@ body::-webkit-scrollbar-thumb{
         align-items: center;
     }
 }
-@media (max-width:1030px) {
+@media (max-width:1100px) {
     #venta{
         grid-template-columns: 32% 32% 32%;
     }
