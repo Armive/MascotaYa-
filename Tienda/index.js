@@ -29,6 +29,7 @@ let fechaActual=new Date()
 let resultados=false
 const parrafoResultados=document.getElementById('relacionados')
 const mensajeBusqueda = document.getElementById('busqueda')
+const main=document.getElementById('venta')
 class Producto{
     constructor(Nombre,Precio,foto,categoria,id,Descuento=0,href="#"){
         this.Nombre=Nombre
@@ -72,7 +73,7 @@ let beauceron=new Producto('Beauceron',1600000,'./Imagenes/29.png','caninos','be
 let bedlingtonTerrier=new Producto('Bedlington Terrier',1300000,'./Imagenes/30.png','caninos','bedlington-terrier')
 let bichonBoloñes=new Producto('Bichón Boloñés',1400000,'./Imagenes/31.png','caninos','bichon-boloñes')
 let bichonFrise=new Producto('Bichón Frisé',1200000,'./Imagenes/32.png','caninos','bichon-frise')
-let bobtail=new Producto('Bobtail (antiguo perro pastor inglés)',1900000,'./Imagenes/33.png','caninos','bobtail-(antiguo-perro-pastor-inglés)')
+let bobtail=new Producto('Bobtail',1900000,'./Imagenes/33.png','caninos','bobtail-(antiguo-perro-pastor-inglés)')
 let borderCollie=new Producto('Border Collie',2600000,'./Imagenes/34.png','caninos','border-collie')
 let borderTerrier=new Producto('Border Terrier',1800000,'./Imagenes/35.png','caninos','border-terrier')
 let borzoi=new Producto('Borzoi',1950000,'./Imagenes/36.png','caninos','borzoi')
@@ -82,7 +83,7 @@ let boyerodeFlandes=new Producto('Boyero de Flandes',2000000,'./Imagenes/39.png'
 let braccoItaliano=new Producto('Bracco italiano',1800000,'./Imagenes/40.png','caninos','bracco-italiano')
 let bracoAlemanDePeloCorto=new Producto('Braco alemán de pelo corto',1900000,'./Imagenes/41.png','caninos','braco-aleman-de-pelo-corto')
 let bracoAlemanDePeloDuro=new Producto('Braco alemán de pelo duro',2100000,'./Imagenes/42.png','caninos','braco-aleman-de-pelo-duro')
-let bracoDeWeimar=new Producto('Braco de Weimar (de pelo corto y suave)',1800000,'./Imagenes/43.png','caninos','braco-de-weimar-(de-pelo-corto-y-suave)')
+let bracoDeWeimar=new Producto('Braco de Weimar',1800000,'./Imagenes/43.png','caninos','braco-de-weimar')
 let bracoHungaro=new Producto('Braco hungaro',1600000,'./Imagenes/44.png','caninos','braco-hungaro')
 let bracoHungaroDePeloDuro=new Producto('Braco húngaro de pelo duro',1700000,'./Imagenes/45.png','caninos','braco-hungaro-de-pelo-duro')
 let breton=new Producto('Bretón',1200000,'./Imagenes/46.png','caninos','breton')
@@ -110,11 +111,11 @@ let guacal=new  Producto('Guacal',70000,'./Imagenes/67.png','accesorios','guacal
 let salvavidasParaPerro=new Producto('Salva vidas para perro', 50000, './Imagenes/68.png', 'accesorios','salva-vidas-para-perro')
 let ifetch=new Producto('iFetch',200000,'./Imagenes/69.png','accesorios','ifetch')
 let bebederoAutomaticoParaPerros=new Producto('Bebedero Automatico Para Perros',150000,'./Imagenes/70.png','accesorios','bebedero-automatico-para-perros')
-let colchonetaRefrigeranteParaPerros=new Producto('Colchoneta Refrigerante para perros', 70000,'./Imagenes/71.png','accesorios','colchoneta-refrigerante-para-perros')
+let colchonetaRefrigeranteParaPerros=new Producto('Colchoneta Refrigerante', 70000,'./Imagenes/71.png','accesorios','colchoneta-refrigerante-para-perros')
 let laserParaGatos=new Producto('Laser Para Gatos',20000,'./Imagenes/72.png','accesorios','laser-para-gatos')
 let ratonConControlRemoto=new Producto('Raton controlado a control remoto',30000,'./Imagenes/73.png','accesorios','raton-controlado-a-control-remoto')
 const productos=[bergamasco,chihuahua,boxer,beagle,abisinio,bengali,burmes,balines,canario,loro,periquito,cacatua,collar,gorrito,pelota,frisby,huesito,jaula,ratonsito,huesitoId,affenpinscher,shibaInuJapones,basenji,bassetAzuldeGascuña,bassetGrifonVandeanoGrande,bassetGrifonVandeanoPequeño,bassetHound,bassetLeonardoDeBretaña,beauceron,bedlingtonTerrier,bichonBoloñes,bichonFrise,bobtail,borderCollie,borderTerrier,borzoi,bostonTerrier,boyerodeBerna,boyerodeFlandes,braccoItaliano,bracoAlemanDePeloCorto,bracoAlemanDePeloDuro,bracoDeWeimar,,bracoHungaro,bracoHungaroDePeloDuro,breton,buhundNoruego,bullTerrier,bullTerrierMiniatura,bulldog,bulldogFrances,pastorBelgaMalinois,pastorAleman,britanicoDePeloCorto,burmilla,chinchilla,cornishRex,cymric,devonRex,ExoticoDePeloCorto,foldEscoces,khaoManee,korat,laperm,guacamaya,cotorra,guacal,salvavidasParaPerro,ifetch,bebederoAutomaticoParaPerros,colchonetaRefrigeranteParaPerros,laserParaGatos,ratonConControlRemoto]
-const main=document.getElementById('venta')
+
 
 
 function ofertasPerros(descuento) {
@@ -251,11 +252,11 @@ document.addEventListener('keyup',e =>{
                 }
                 
             }
-            ahoraIdSinGuion.toLowerCase().includes(e.target.value.toLowerCase())
-                ? Element.classList.remove('filtro')
-                :Element.classList.add('filtro')
             if(ahoraIdSinGuion.toLowerCase().includes(e.target.value.toLowerCase())){
                 resultados=true
+                Element.classList.remove('filtro')
+            }else{
+                Element.classList.add('filtro')
             }
             
         })
