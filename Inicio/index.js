@@ -151,10 +151,10 @@ if (fechaActual.getDay()==5 && fechaActual.getDate()>=24 && fechaActual.getDate(
 productos.forEach((item) => {
     if(item.descuento>0){
         ahoraPrecio=(100-item.descuento)*item.precio/100
-        let itemInner=`<a class="mascota" href=${item.href} > <p>${item.descuento}%</p> <img src=${item.foto} alt=${item.nombre }> <p>${item.nombre} </p>  <h5>Antes: <span>$${item.precio}</span> </h5><h5>Ahora: $${ahoraPrecio}</h5></a>`
+        let itemInner=`<a class="mascota" href=${item.href} > <p>${item.descuento}%</p> <img loading="lazy" src=${item.foto} alt=${item.nombre }> <p>${item.nombre} </p>  <h5>Antes: <span>$${item.precio}</span> </h5><h5>Ahora: $${ahoraPrecio}</h5></a>`
         item.contenedor.innerHTML+= itemInner
     }else{
-        let itemInner=`<a class="mascota" href=${item.href} ><img src=${item.foto} alt=${item.nombre }> <p>${item.nombre}</p> <h4>$${item.precio}</h4></a>`
+        let itemInner=`<a class="mascota" href=${item.href} ><img loading="lazy" src=${item.foto} alt=${item.nombre }> <p>${item.nombre}</p> <h4>$${item.precio}</h4></a>`
         item.contenedor.innerHTML+= itemInner
     }
     

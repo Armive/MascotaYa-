@@ -38,6 +38,7 @@ html body .cargando{
     background-color: #F1F2F3;
     position: sticky;
     z-index: 1000;
+    top: 0;
 }
 /*Inicializando*/
 *{
