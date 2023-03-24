@@ -7,7 +7,6 @@
 }
 
 :root{
-    --color-fondo-loader: #f1f2f3;
     --color-fondo-header:#00204A;
     --color-logo: #FFDA77;
     --color-anclas-header:#ffe;
@@ -34,7 +33,10 @@ a{
     height: 100vh;
     display: grid;
     place-items: center;
-    background-color: var(--color-fondo-loader);
+    background-color: #f1f2f3;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
 }
 .hidden{
     overflow: hidden;

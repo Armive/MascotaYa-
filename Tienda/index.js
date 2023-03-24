@@ -211,11 +211,11 @@ function valorInicialesCategorias() {
 
 productos.forEach((producto)=>{
     if (producto.Descuento===0) {
-        let inner=`<a href=${producto.href} class="producto ${producto.categoria}" id=${producto.id} ><img src=${producto.foto} alt=${producto.Nombre}><p>${producto.Nombre}</p><h4>$${producto.Precio}</h4></a>`
+        let inner=`<a  href=${producto.href} class="producto ${producto.categoria}" id=${producto.id} ><img loading="lazy" src=${producto.foto} alt=${producto.Nombre}><p>${producto.Nombre}</p><h4>$${producto.Precio}</h4></a>`
         main.innerHTML+=inner
     }else{
         let descuento=(100-producto.Descuento)*producto.Precio/100
-        let inner=`<a href=${producto.href} class="producto  ${producto.categoria} " id=${producto.id} ><p>${producto.Descuento}%</p><img src=${producto.foto} alt=${producto.Nombre} ><p>${producto.Nombre} </p><h5>Precio normal: <span>$${producto.Precio}<span></h5><h5>Precio ahora: $${descuento} </h5></a>`
+        let inner=`<a  href=${producto.href} class="producto  ${producto.categoria} " id=${producto.id} ><p>${producto.Descuento}%</p><img loading="lazy" src=${producto.foto} alt=${producto.Nombre} ><p>${producto.Nombre} </p><h5>Precio normal: <span>$${producto.Precio}<span></h5><h5>Precio ahora: $${descuento} </h5></a>`
         main.innerHTML+=inner
     }
 })
